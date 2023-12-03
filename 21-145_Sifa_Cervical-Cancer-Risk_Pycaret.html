@@ -1,0 +1,2303 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Cervical Cancer Behavior Risk &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '21-145_Sifa_Cervical-Cancer-Risk_Pycaret';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="PEMROSESAN DATA" href="21-145_Sifa_Toronto-File.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/data.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to My Website
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="21-145_Sifa_Toronto-File.html">Toronto File</a></li>
+
+
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Cervical Cancer Behavior Risk</a></li>
+
+
+
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F21-145_Sifa_Cervical-Cancer-Risk_Pycaret.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/21-145_Sifa_Cervical-Cancer-Risk_Pycaret.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>TUJUAN ANALISIS</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">TUJUAN ANALISIS</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding">DATA UNDERSTANDING</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deskripsi-data">Deskripsi Data</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#eksplorasi-data">EKSPLORASI DATA</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing">PREPROCESSING</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-menggunakan-min-max-scaler">1. Normalisasi Menggunakan Min-Max Scaler</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#melakukan-standarisasi-pada-data-train">2. Melakukan Standarisasi pada Data Train</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reduksi-dimensi-menggunakan-pca">3. Reduksi Dimensi menggunakan PCA</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-metode-machine-learning-terbaik-menggunakan-pycaret">MENCARI METODE MACHINE LEARNING TERBAIK MENGGUNAKAN PYCARET</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simpan-model-terbaik-dari-hasil-pycaret">Simpan Model Terbaik dari Hasil PyCaret</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#klasifikasi-menggunakan-random-forest-classifier">KLASIFIKASI MENGGUNAKAN RANDOM FOREST CLASSIFIER</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#link-streamlit">Link Streamlit :</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <p><h1>KLASIFIKASI RESIKO PERILAKU KANKER SERVIKS</h1></p>
+<section id="tujuan-analisis">
+<h1>TUJUAN ANALISIS<a class="headerlink" href="#tujuan-analisis" title="Permalink to this heading">#</a></h1>
+<p>Tujuan analisis dari klasifikasi risiko perilaku kanker serviks adalah untuk mengidentifikasi dan mengkategorikan individu berdasarkan perilaku yang dapat meningkatkan atau mengurangi risiko mereka terkena kanker serviks. Klasifikasi risiko perilaku ini dapat membantu dalam pencegahan, deteksi dini, dan manajemen penyakit kanker serviks.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
+<span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
+<span class="o">%</span><span class="k">cd</span> /content/drive/MyDrive/PSD/Cervical Cancer
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="nn">&lt;ipython-input-1-c9a9ec67e739&gt;</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">run_line_magic</span><span class="p">(</span><span class="s1">&#39;cd&#39;</span><span class="p">,</span> <span class="s1">&#39;/content/drive/MyDrive/PSD/Cervical Cancer&#39;</span><span class="p">)</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/google/colab/drive.py</span> in <span class="ni">mount</span><span class="nt">(mountpoint, force_remount, timeout_ms, readonly)</span>
+<span class="g g-Whitespace">    </span><span class="mi">101</span> <span class="k">def</span> <span class="nf">mount</span><span class="p">(</span><span class="n">mountpoint</span><span class="p">,</span> <span class="n">force_remount</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">timeout_ms</span><span class="o">=</span><span class="mi">120000</span><span class="p">,</span> <span class="n">readonly</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">102</span><span class="w">   </span><span class="sd">&quot;&quot;&quot;Mount your Google Drive at the specified mountpoint path.&quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">103</span>   <span class="k">return</span> <span class="n">_mount</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">104</span>       <span class="n">mountpoint</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">105</span>       <span class="n">force_remount</span><span class="o">=</span><span class="n">force_remount</span><span class="p">,</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/google/colab/drive.py</span> in <span class="ni">_mount</span><span class="nt">(mountpoint, force_remount, timeout_ms, ephemeral, readonly)</span>
+<span class="g g-Whitespace">    </span><span class="mi">130</span>   <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">131</span>   <span class="k">if</span> <span class="n">ephemeral</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">132</span>     <span class="n">_message</span><span class="o">.</span><span class="n">blocking_request</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">133</span>         <span class="s1">&#39;request_auth&#39;</span><span class="p">,</span> <span class="n">request</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;authType&#39;</span><span class="p">:</span> <span class="s1">&#39;dfs_ephemeral&#39;</span><span class="p">},</span> <span class="n">timeout_sec</span><span class="o">=</span><span class="kc">None</span>
+<span class="g g-Whitespace">    </span><span class="mi">134</span>     <span class="p">)</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/google/colab/_message.py</span> in <span class="ni">blocking_request</span><span class="nt">(request_type, request, timeout_sec, parent)</span>
+<span class="g g-Whitespace">    </span><span class="mi">174</span>       <span class="n">request_type</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="n">parent</span><span class="p">,</span> <span class="n">expect_reply</span><span class="o">=</span><span class="kc">True</span>
+<span class="g g-Whitespace">    </span><span class="mi">175</span>   <span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">176</span>   <span class="k">return</span> <span class="n">read_reply_from_input</span><span class="p">(</span><span class="n">request_id</span><span class="p">,</span> <span class="n">timeout_sec</span><span class="p">)</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/google/colab/_message.py</span> in <span class="ni">read_reply_from_input</span><span class="nt">(message_id, timeout_sec)</span>
+<span class="g g-Whitespace">     </span><span class="mi">94</span>     <span class="n">reply</span> <span class="o">=</span> <span class="n">_read_next_input_message</span><span class="p">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">95</span>     <span class="k">if</span> <span class="n">reply</span> <span class="o">==</span> <span class="n">_NOT_READY</span> <span class="ow">or</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">reply</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+<span class="ne">---&gt; </span><span class="mi">96</span>       <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.025</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">97</span>       <span class="k">continue</span>
+<span class="g g-Whitespace">     </span><span class="mi">98</span>     <span class="k">if</span> <span class="p">(</span>
+
+<span class="ne">KeyboardInterrupt</span>: 
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="data-understanding">
+<h1>DATA UNDERSTANDING<a class="headerlink" href="#data-understanding" title="Permalink to this heading">#</a></h1>
+<section id="deskripsi-data">
+<h2>Deskripsi Data<a class="headerlink" href="#deskripsi-data" title="Permalink to this heading">#</a></h2>
+<p>Kanker serviks adalah kanker yang tumbuh pada sel-sel di leher rahim. Kanker ini umumnya berkembang perlahan dan baru menunjukkan gejala ketika sudah memasuki stadium lanjut. Oleh sebab itu, penting untuk mendeteksi kanker serviks sejak dini sebelum timbul komplikasi serius.</p>
+<p>Data ini saya ambil untuk mendeteksi apakah seseorang terkena Kanker Serviks atau tidak yang dapat dilihat dari resiko perilaku orang tersebut.</p>
+<p>Dataset yang saya gunakan didapat dari UCI pada link : <a class="reference external" href="https://archive.ics.uci.edu/dataset/537/cervical+cancer+behavior+risk">https://archive.ics.uci.edu/dataset/537/cervical+cancer+behavior+risk</a></p>
+<p>Tipe data yang digunakan pada dataset Cervical Cancer Behavior Risk merupakan tipe data numerik yang terdiri dari 20 kolom, yang dimana 19 kolom merupakan fitur dan 1 kolom merupakan label dengan 2 jenis kelas yaitu 1 = Terkena Kanker Serviks dengan jumlah 21 dan 0 = Tidak Terkena Kanker Serviks dengan jumlah 51.</p>
+<p>Berikut adalah penjelasan mengenai fitur - fitur yang ada dalam dataset ini :</p>
+<ol class="arabic simple">
+<li><p>behavior_sexualRisk (Perilaku Seksual Resiko) = Perilaku seksual berisiko pada kanker serviks dapat mencakup praktek-praktek yang meningkatkan risiko terpapar human papillomavirus (HPV), yang merupakan penyebab utama kanker serviks. HPV adalah virus yang ditularkan secara seksual, dan beberapa tindakan seksual tertentu dapat meningkatkan risiko paparan virus ini.</p></li>
+<li><p>behavior_eating (Perilaku Makan) = Perilaku makan pada kanker serviks dapat mencakup sejumlah faktor yang berkaitan dengan pola makan dan gaya hidup yang dapat memengaruhi risiko terjadinya atau perkembangan kanker serviks.</p></li>
+<li><p>behavior_personalHygine (Perilaku Kebersihan Pribadi) = Perilaku kebersihan pribadi atau personal hygiene yang baik dapat memainkan peran dalam mencegah infeksi HPV (Human Papillomavirus), yang merupakan penyebab utama kanker serviks.</p></li>
+<li><p>intention_aggregation (Agregasi Faktor Resiko) = Agregasi faktor risiko pada kanker serviks merujuk pada kecenderungan beberapa faktor risiko kanker serviks untuk terkumpul atau berkumpul pada individu tertentu. Ini berarti bahwa seseorang mungkin memiliki lebih dari satu faktor risiko yang dapat meningkatkan risiko mereka untuk mengembangkan kanker serviks.</p></li>
+<li><p>intention_commitment (Komitmen Niat) = Komitmen untuk pencegahan kanker serviks mencakup sikap atau keputusan untuk aktif terlibat dalam langkah-langkah pencegahan kanker serviks. Pencegahan kanker serviks melibatkan serangkaian tindakan yang dapat diambil oleh individu untuk mengurangi risiko terkena kanker serviks atau untuk mendeteksi kondisi tersebut pada tahap awal.</p></li>
+<li><p>attitude_consistency (Konsistensi Sikap) = Konsistensi sikap pada kanker serviks merujuk pada kesesuaian atau kecocokan antara sikap yang dimiliki oleh individu terhadap kanker serviks dan perilaku atau tindakan yang mereka tunjukkan sehubungan dengan pencegahan atau deteksi dini kanker serviks.</p></li>
+<li><p>attitude_spontaneity (Spontanitas Sikap) = Spontanitas sikap terkait kanker serviks merujuk pada sejauh mana sikap atau reaksi seseorang terhadap masalah kanker serviks muncul secara alami atau tanpa rangsangan atau pengaruh eksternal yang signifikan.</p></li>
+<li><p>norm_significantPerson (Norma Orang Penting) = Norma orang penting atau norma sosial pada kanker serviks merujuk pada harapan atau standar perilaku yang diterima oleh orang-orang di sekitar kita atau dalam kelompok sosial tertentu terkait dengan pencegahan atau deteksi dini kanker serviks.</p></li>
+<li><p>norm_fulfillment (Pemenuhan Norma) = Istilah pemenuhan norma pada kanker serviks dapat merujuk pada sejauh mana seseorang atau suatu kelompok mematuhi atau memenuhi norma-norma sosial atau ekspektasi yang ada terkait dengan pencegahan, deteksi dini, atau tindakan lainnya terkait kanker serviks.</p></li>
+<li><p>perception_vulnerability (Persepsi Kerentanan) = Persepsi kerentanan pada kanker serviks merujuk pada bagaimana seseorang menilai risiko atau rentan mereka terhadap pengembangan kanker serviks. Ini mencakup penilaian individu terhadap sejauh mana mereka merasa mungkin terpapar faktor risiko yang dapat menyebabkan kanker serviks.</p></li>
+<li><p>perception_severity (Persepsi Keparahan) = Persepsi keparahan pada kanker serviks merujuk pada bagaimana seseorang menilai tingkat keparahan atau seriusnya konsekuensi yang dapat terjadi akibat kanker serviks.</p></li>
+<li><p>motivation_strength (Kekuatan Motivasi) = Kekuatan motivasi pada kanker serviks merujuk pada intensitas atau tingkat dorongan internal yang mendorong individu untuk mengadopsi perilaku pencegahan atau deteksi dini terkait kanker serviks.</p></li>
+<li><p>motivation_willingness (Kemauan Motivasi) = Kemauan dan motivasi pada kanker serviks merujuk pada keinginan dan dorongan seseorang untuk mengambil langkah-langkah pencegahan atau deteksi dini terkait dengan kanker serviks.</p></li>
+<li><p>socialSupport_emotionality (Dukungan Sosial Emosionalitas) = Dukungan sosial emosionalitas pada kanker serviks merujuk pada bentuk dukungan sosial yang berkaitan dengan aspek emosional atau perasaan yang terlibat dalam menghadapi kanker serviks.</p></li>
+<li><p>socialSupport_appreciation (Apresiasi Dukungan Sosial) = Apresiasi dukungan sosial untuk kanker serviks mengacu pada penghargaan dan pemahaman terhadap peran positif dan kontribusi dari dukungan sosial yang diterima oleh individu yang mengalami kanker serviks.</p></li>
+<li><p>socialSupport_instrumental (Dukungan Sosial Instrumental) = Dukungan sosial instrumental pada kanker serviks merujuk pada dukungan praktis atau tindakan nyata yang ditunjukkan oleh orang lain untuk membantu individu yang mengalami kanker serviks dalam situasi tertentu.</p></li>
+<li><p>empowerment_knowledge (Pengetahuan Pemberdayaan) = Pengetahuan pemberdayaan untuk pencegahan kanker serviks merujuk pada pemahaman dan pengetahuan yang memberdayakan individu atau komunitas untuk mengambil langkah-langkah pencegahan yang efektif terhadap kanker serviks.</p></li>
+<li><p>empowerment_abilities (Kemampuan Pemberdayaan) = Kemampuan pemberdayaan pada kanker serviks merujuk pada kapasitas individu atau komunitas untuk mengambil tindakan pencegahan atau mengelola risiko kanker serviks.</p></li>
+<li><p>empowerment_desires (Keinginan Pemberdayaan) = Keinginan pemberdayaan pada kanker serviks merujuk pada dorongan atau motivasi individu untuk mencari pengetahuan, keterampilan, dan sumber daya yang dapat memberdayakan mereka untuk mengambil langkah-langkah pencegahan atau mengelola risiko kanker serviks.</p></li>
+<li><p>ca_cervix (Deteksi Kanker Serviks) = ini adalah atribut kelas, yang dimana angka 1 adalah mengidap kanker serviks, dan angka 0 tidak ada kanker serviks.</p></li>
+</ol>
+</section>
+</section>
+<section id="eksplorasi-data">
+<h1>EKSPLORASI DATA<a class="headerlink" href="#eksplorasi-data" title="Permalink to this heading">#</a></h1>
+<p><strong>Import Library</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Math</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Import Dataset</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Membaca data dari file CSV menggunakan pandas</span>
+<span class="n">dt</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/niswatulsifa/PSD/main/cervical-cancer.csv&#39;</span><span class="p">)</span>
+<span class="n">dt</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-3f0e555e-f2f2-43b0-b328-f9f55d3fd02f" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>behavior_sexualRisk</th>
+      <th>behavior_eating</th>
+      <th>behavior_personalHygine</th>
+      <th>intention_aggregation</th>
+      <th>intention_commitment</th>
+      <th>attitude_consistency</th>
+      <th>attitude_spontaneity</th>
+      <th>norm_significantPerson</th>
+      <th>norm_fulfillment</th>
+      <th>perception_vulnerability</th>
+      <th>perception_severity</th>
+      <th>motivation_strength</th>
+      <th>motivation_willingness</th>
+      <th>socialSupport_emotionality</th>
+      <th>socialSupport_appreciation</th>
+      <th>socialSupport_instrumental</th>
+      <th>empowerment_knowledge</th>
+      <th>empowerment_abilities</th>
+      <th>empowerment_desires</th>
+      <th>ca_cervix</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>10</td>
+      <td>13</td>
+      <td>12</td>
+      <td>4</td>
+      <td>7</td>
+      <td>9</td>
+      <td>10</td>
+      <td>1</td>
+      <td>8</td>
+      <td>7</td>
+      <td>3</td>
+      <td>14</td>
+      <td>8</td>
+      <td>5</td>
+      <td>7</td>
+      <td>12</td>
+      <td>12</td>
+      <td>11</td>
+      <td>8</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>10</td>
+      <td>11</td>
+      <td>11</td>
+      <td>10</td>
+      <td>14</td>
+      <td>7</td>
+      <td>7</td>
+      <td>5</td>
+      <td>5</td>
+      <td>4</td>
+      <td>2</td>
+      <td>15</td>
+      <td>13</td>
+      <td>7</td>
+      <td>6</td>
+      <td>5</td>
+      <td>5</td>
+      <td>4</td>
+      <td>4</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>10</td>
+      <td>15</td>
+      <td>3</td>
+      <td>2</td>
+      <td>14</td>
+      <td>8</td>
+      <td>10</td>
+      <td>1</td>
+      <td>4</td>
+      <td>7</td>
+      <td>2</td>
+      <td>7</td>
+      <td>3</td>
+      <td>3</td>
+      <td>6</td>
+      <td>11</td>
+      <td>3</td>
+      <td>3</td>
+      <td>15</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>10</td>
+      <td>11</td>
+      <td>10</td>
+      <td>10</td>
+      <td>15</td>
+      <td>7</td>
+      <td>7</td>
+      <td>1</td>
+      <td>5</td>
+      <td>4</td>
+      <td>2</td>
+      <td>15</td>
+      <td>13</td>
+      <td>7</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>8</td>
+      <td>11</td>
+      <td>7</td>
+      <td>8</td>
+      <td>10</td>
+      <td>7</td>
+      <td>8</td>
+      <td>1</td>
+      <td>5</td>
+      <td>3</td>
+      <td>2</td>
+      <td>15</td>
+      <td>5</td>
+      <td>3</td>
+      <td>6</td>
+      <td>12</td>
+      <td>5</td>
+      <td>4</td>
+      <td>7</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>67</th>
+      <td>10</td>
+      <td>14</td>
+      <td>14</td>
+      <td>10</td>
+      <td>15</td>
+      <td>6</td>
+      <td>7</td>
+      <td>5</td>
+      <td>15</td>
+      <td>14</td>
+      <td>10</td>
+      <td>15</td>
+      <td>13</td>
+      <td>9</td>
+      <td>8</td>
+      <td>12</td>
+      <td>12</td>
+      <td>11</td>
+      <td>9</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td>10</td>
+      <td>12</td>
+      <td>15</td>
+      <td>10</td>
+      <td>15</td>
+      <td>8</td>
+      <td>8</td>
+      <td>5</td>
+      <td>15</td>
+      <td>14</td>
+      <td>8</td>
+      <td>12</td>
+      <td>14</td>
+      <td>11</td>
+      <td>7</td>
+      <td>13</td>
+      <td>15</td>
+      <td>11</td>
+      <td>14</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td>10</td>
+      <td>8</td>
+      <td>11</td>
+      <td>6</td>
+      <td>10</td>
+      <td>6</td>
+      <td>4</td>
+      <td>3</td>
+      <td>13</td>
+      <td>9</td>
+      <td>8</td>
+      <td>14</td>
+      <td>12</td>
+      <td>9</td>
+      <td>7</td>
+      <td>11</td>
+      <td>12</td>
+      <td>10</td>
+      <td>10</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>9</td>
+      <td>12</td>
+      <td>13</td>
+      <td>10</td>
+      <td>13</td>
+      <td>6</td>
+      <td>6</td>
+      <td>5</td>
+      <td>14</td>
+      <td>13</td>
+      <td>10</td>
+      <td>13</td>
+      <td>12</td>
+      <td>11</td>
+      <td>8</td>
+      <td>12</td>
+      <td>11</td>
+      <td>13</td>
+      <td>15</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>10</td>
+      <td>14</td>
+      <td>14</td>
+      <td>6</td>
+      <td>12</td>
+      <td>7</td>
+      <td>8</td>
+      <td>5</td>
+      <td>15</td>
+      <td>12</td>
+      <td>10</td>
+      <td>10</td>
+      <td>13</td>
+      <td>11</td>
+      <td>9</td>
+      <td>14</td>
+      <td>13</td>
+      <td>15</td>
+      <td>15</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>72 rows × 20 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-3f0e555e-f2f2-43b0-b328-f9f55d3fd02f')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-3f0e555e-f2f2-43b0-b328-f9f55d3fd02f button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-3f0e555e-f2f2-43b0-b328-f9f55d3fd02f');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-2bdd9a67-ec04-4b26-87ba-dbd787ca80eb">
+  <button class="colab-df-quickchart" onclick="quickchart('df-2bdd9a67-ec04-4b26-87ba-dbd787ca80eb')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-2bdd9a67-ec04-4b26-87ba-dbd787ca80eb button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Mengecek jumlah baris dan kolom</span>
+<span class="n">dt</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(72, 20)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Mengecek jumlah masing-masing kelas</span>
+<span class="n">dt</span><span class="p">[</span><span class="s2">&quot;ca_cervix&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0    51
+1    21
+Name: ca_cervix, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Menghitung jumlah sampel dalam setiap kelas</span>
+<span class="n">class_count</span> <span class="o">=</span> <span class="n">dt</span><span class="p">[</span><span class="s2">&quot;ca_cervix&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+
+<span class="c1"># Membuat plot bar untuk menampilkan jumlah sampel dalam setiap kelas</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">class_count</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">class_count</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;red&#39;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;ca_cervix&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Jumlah Data&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Jumlah Data Tiap Kelas Yang Ada Dalam Dataset Cervical Cancer Behavior Risk&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/555eaf214b67b542937ec252bf07cd69ce159f292eff943d9d6237dc6ac0a050.png" src="_images/555eaf214b67b542937ec252bf07cd69ce159f292eff943d9d6237dc6ac0a050.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Menampilkan nama-nama kolom</span>
+<span class="n">dt</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;behavior_sexualRisk&#39;, &#39;behavior_eating&#39;, &#39;behavior_personalHygine&#39;,
+       &#39;intention_aggregation&#39;, &#39;intention_commitment&#39;, &#39;attitude_consistency&#39;,
+       &#39;attitude_spontaneity&#39;, &#39;norm_significantPerson&#39;, &#39;norm_fulfillment&#39;,
+       &#39;perception_vulnerability&#39;, &#39;perception_severity&#39;,
+       &#39;motivation_strength&#39;, &#39;motivation_willingness&#39;,
+       &#39;socialSupport_emotionality&#39;, &#39;socialSupport_appreciation&#39;,
+       &#39;socialSupport_instrumental&#39;, &#39;empowerment_knowledge&#39;,
+       &#39;empowerment_abilities&#39;, &#39;empowerment_desires&#39;, &#39;ca_cervix&#39;],
+      dtype=&#39;object&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Cek Missing Value</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Mengecek apakah ada missing value atau tidak pada setiap kolom</span>
+<span class="n">missing_values</span> <span class="o">=</span> <span class="n">dt</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">missing_values</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>behavior_sexualRisk           0
+behavior_eating               0
+behavior_personalHygine       0
+intention_aggregation         0
+intention_commitment          0
+attitude_consistency          0
+attitude_spontaneity          0
+norm_significantPerson        0
+norm_fulfillment              0
+perception_vulnerability      0
+perception_severity           0
+motivation_strength           0
+motivation_willingness        0
+socialSupport_emotionality    0
+socialSupport_appreciation    0
+socialSupport_instrumental    0
+empowerment_knowledge         0
+empowerment_abilities         0
+empowerment_desires           0
+ca_cervix                     0
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p>.isnull() merupakan metode dari Pandas yang digunakan untuk menghasilkan DataFrame yang berisi nilai boolean, di mana nilai True menunjukkan bahwa elemen di lokasi tersebut adalah null (NaN), dan nilai False menunjukkan bahwa elemen tersebut tidak null.</p>
+<p>.sum() merupakan metode dari Pandas yang digunakan untuk menjumlahkan nilai boolean di setiap kolom yang dimana True direpresentasikan sebagai 1 dan False sebagai 0. Dengan demikian maka penjumlahan dari nilai-nilai tersebut mendapatkan jumlah nilai null di setiap kolom.</p>
+<p>Dari Hasil code diatas yang didapat dari masing-masing kolom yaitu 0 yang menandakan bahwa tidak ada missing value dari setiap kolom.</p>
+<p><strong>Distribusi Data</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Distribusi data</span>
+<span class="n">dt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">15</span><span class="p">))</span>
+<span class="c1"># Simpan gambar sebelum menampilkan</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;histogram.png&#39;</span><span class="p">)</span>
+<span class="c1"># Tampilkan plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/9e997a34e7bdedb86523f4116650c67d3427a3e8fdc89420f0f30fab7e55ae61.png" src="_images/9e997a34e7bdedb86523f4116650c67d3427a3e8fdc89420f0f30fab7e55ae61.png" />
+</div>
+</div>
+</section>
+<section id="preprocessing">
+<h1>PREPROCESSING<a class="headerlink" href="#preprocessing" title="Permalink to this heading">#</a></h1>
+<section id="normalisasi-menggunakan-min-max-scaler">
+<h2>1. Normalisasi Menggunakan Min-Max Scaler<a class="headerlink" href="#normalisasi-menggunakan-min-max-scaler" title="Permalink to this heading">#</a></h2>
+<p>Normalisasi Min-Max Scaler adalah salah satu metode normalisasi yang digunakan dalam pengolahan data dan pembelajaran mesin. Tujuan normalisasi adalah untuk mengubah nilai-nilai variabel dalam dataset sehingga mereka dapat memiliki skala yang seragam atau berada dalam rentang tertentu.</p>
+<p>Normalisasi Min-Max Scaler digunakan untuk mengubah setiap nilai dalam dataset ke dalam rentang yang ditentukan, biasanya antara 0 dan 1.</p>
+<p>Rumus dari normalisasi Min-Max Scaler yaitu sebagai berikut :</p>
+<p><span class="math notranslate nohighlight">\(Xnormalized = \frac{(X - Xmin)}{Xmax - Xmin}\)</span></p>
+<ul class="simple">
+<li><p>Xnormalized adalah nilai yang telah dinormalisasi</p></li>
+<li><p>X adalah nilai asli dari variabel</p></li>
+<li><p>Xmin adalah nilai minimum dari variabel</p></li>
+<li><p>Xmax adalah nilai maksimum dari variabel</p></li>
+</ul>
+<p>Dengan menggunakan rumus ini, setiap nilai dalam variabel akan diubah sedemikian rupa sehingga berada dalam rentang antara 0 dan 1. Proses ini membantu untuk mengatasi perbedaan skala antara variabel-variabel dalam dataset, sehingga variabel-variabel tersebut dapat memberikan kontribusi seimbang dalam analisis atau model pembelajaran mesin.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">MinMaxScaler</span>
+<span class="kn">from</span> <span class="nn">pickle</span> <span class="kn">import</span> <span class="n">dump</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="melakukan-standarisasi-pada-data-train">
+<h2>2. Melakukan Standarisasi pada Data Train<a class="headerlink" href="#melakukan-standarisasi-pada-data-train" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Membaca data dari file csv</span>
+<span class="n">dt</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/niswatulsifa/PSD/main/cervical-cancer.csv&#39;</span><span class="p">)</span>
+
+<span class="c1">#Memisahkan fitur (X) dan label (y)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">dt</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;ca_cervix&#39;</span><span class="p">],</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="c1">#Menghapus kolom ca_cervix karena pada variabel X hanya berisi fitur saja</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">dt</span><span class="p">[</span><span class="s1">&#39;ca_cervix&#39;</span><span class="p">]</span> <span class="c1">#Inisialisasi kolom label ca_cervix</span>
+
+<span class="c1">#Split data into train and test sets</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">random_state</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">test_size</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Mendefinisikan Scaler</span>
+<span class="n">minmax</span> <span class="o">=</span> <span class="n">MinMaxScaler</span><span class="p">()</span>
+<span class="c1">#Menghitung rata-rata dan standart deviasi tiap fitur (menggunakan rumus Min-Max Scaler)</span>
+<span class="n">minmax</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+<span class="c1">#Mentransformasi nilai-nilai dari setiap fitur yang dihitung sebelumnya. Hasilnya adalah data latih dan data uji yang telah di skalakan.</span>
+<span class="n">X_train_scaled</span> <span class="o">=</span> <span class="n">minmax</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+<span class="n">X_test_scaled</span> <span class="o">=</span> <span class="n">minmax</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="c1">#Menyimpan model yang telah dilatih</span>
+<span class="n">dump</span><span class="p">(</span><span class="n">minmax</span><span class="p">,</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;cervical-cancer.pkl&#39;</span><span class="p">,</span><span class="s1">&#39;wb&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="reduksi-dimensi-menggunakan-pca">
+<h2>3. Reduksi Dimensi menggunakan PCA<a class="headerlink" href="#reduksi-dimensi-menggunakan-pca" title="Permalink to this heading">#</a></h2>
+<p>Principal Component Analysis (PCA) adalah suatu metode statistik yang digunakan untuk mengidentifikasi pola dalam data multivariat dengan mereduksi dimensi variabel. PCA mencoba untuk mengekspresikan data dalam bentuk kombinasi linear dari variabel-variabel yang ada sehingga menjadi dimensi baru, yang disebut principal components dimana menggambarkan variasi data dengan baik. Berikut adalah rumus PCA dan penjelasannya:</p>
+<ol class="arabic">
+<li><p>Hitung Matriks Kovarian:</p>
+<p><span class="math notranslate nohighlight">\( \text{Cov}(\mathbf{X}) = \frac{1}{n-1} \sum_{i=1}^{n} (\mathbf{X}_i - \bar{\mathbf{X}})(\mathbf{X}_i - \bar{\mathbf{X}})^T \)</span></p>
+<p>di mana:</p>
+</li>
+</ol>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\mathbf{X}_i \text{ adalah vektor data poin ke-i,}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\bar{\mathbf{X}} \text{ adalah vektor rata-rata dari semua data,}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(n \text{ adalah jumlah data poin.} \)</span></p></li>
+</ul>
+<ol class="arabic" start="2">
+<li><p>Hitung Nilai dan Vektor Eigen: Menghitung nilai eigen (λ) dan vektor eigen (v) dari matriks kovarian.</p>
+<p><span class="math notranslate nohighlight">\( \text{Cov}(\mathbf{X})\mathbf{v} = \lambda\mathbf{v} \)</span></p>
+</li>
+<li><p>Pilih Principal Components: Principal components dipilih berdasarkan nilai eigen tertinggi. Misalnya, jika kita ingin mereduksi dimensi menjadi k, kita memilih k vektor eigen dengan nilai eigen tertinggi.</p></li>
+<li><p>Transformasi Data: Data asli (X) dapat diproyeksikan ke dalam ruang yang baru (Y) yang terdiri dari principal components yang dipilih.</p>
+<p><span class="math notranslate nohighlight">\( \mathbf{Y} = \mathbf{X} \mathbf{V} \)</span></p>
+<p>di mana:</p>
+</li>
+</ol>
+<ul class="simple">
+<li><p>(Y) : matriks yang berisi data yang telah diproyeksikan ke dalam ruang principal components,</p></li>
+<li><p>(X) : matriks data asli,</p></li>
+<li><p>(V) : matriks yang berisi vektor eigen sebagai kolom-kolomnya.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
+<span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">pca_train</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train_scaled</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>pca = PCA(n_components=15) yaitu membuat objek PCA dengan parameter n_components yang ditetapkan yaitu 15, yang berarti akan menghasilkan 15 komponen utama (principal components) dari data. Ini adalah jumlah dimensi yang diinginkan setelah PCA.</p>
+<p>pca_train = pca.fit_transform(X_train_scaled) yang dimana menggunakan objek PCA yang telah dibuat untuk melakukan PCA pada data training yang telah di-scaling (X_train_scaled). Fungsi fit_transform digunakan untuk menghitung komponen utama dan secara efektif mentransformasikan data ke dalam ruang dimensi yang lebih rendah.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Digunakan untuk mengetahui jumlah baris dan kolom dari data hasil PCA pada data uji</span>
+<span class="n">pca_train</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(57, 15)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Digunakan untuk mentransformasi data uji menjadi fitur baru yang dibentuk oleh komponen-komponen PCA</span>
+<span class="n">pca_test</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test_scaled</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Digunakan untuk mengetahui tentang jumlah baris dan kolom dari data hasil transformasi PCA pada data latih.</span>
+<span class="n">pca_test</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(15, 15)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pickle</span>
+
+<span class="c1">#Menyimpan model PCA ke dalam file menggunakan pickle</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;pca_cervical-cancer.pkl&#39;</span><span class="p">,</span><span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+  <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">pca</span><span class="p">,</span><span class="n">file</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="mencari-metode-machine-learning-terbaik-menggunakan-pycaret">
+<h1>MENCARI METODE MACHINE LEARNING TERBAIK MENGGUNAKAN PYCARET<a class="headerlink" href="#mencari-metode-machine-learning-terbaik-menggunakan-pycaret" title="Permalink to this heading">#</a></h1>
+<p>PyCaret merupakan library Python yang dibuat untuk mempermudah dan mempercepat proses pengembangan model machine learning. PyCaret dibuat untuk menyederhanakan alur kerja pengembangan model dan memberikan antarmuka yang mudah digunakan bagi para pengguna, terutama bagi yang tidak memiliki pengalaman mendalam dalam pemrograman atau machine learning.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>pycaret
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: pycaret in /usr/local/lib/python3.10/dist-packages (3.2.0)
+Requirement already satisfied: category-encoders&gt;=2.4.0 in /usr/local/lib/python3.10/dist-packages (from pycaret) (2.6.3)
+Requirement already satisfied: cloudpickle in /usr/local/lib/python3.10/dist-packages (from pycaret) (2.2.1)
+Requirement already satisfied: deprecation&gt;=2.1.0 in /usr/local/lib/python3.10/dist-packages (from pycaret) (2.1.0)
+Requirement already satisfied: imbalanced-learn&gt;=0.8.1 in /usr/local/lib/python3.10/dist-packages (from pycaret) (0.10.1)
+Requirement already satisfied: importlib-metadata&gt;=4.12.0 in /usr/local/lib/python3.10/dist-packages (from pycaret) (6.8.0)
+Requirement already satisfied: ipython&gt;=5.5.0 in /usr/local/lib/python3.10/dist-packages (from pycaret) (7.34.0)
+Requirement already satisfied: ipywidgets&gt;=7.6.5 in /usr/local/lib/python3.10/dist-packages (from pycaret) (7.7.1)
+Requirement already satisfied: jinja2&gt;=1.2 in /usr/local/lib/python3.10/dist-packages (from pycaret) (3.1.2)
+Requirement already satisfied: joblib&gt;=1.2.0 in /usr/local/lib/python3.10/dist-packages (from pycaret) (1.3.2)
+Requirement already satisfied: kaleido&gt;=0.2.1 in /usr/local/lib/python3.10/dist-packages (from pycaret) (0.2.1)
+Requirement already satisfied: lightgbm&gt;=3.0.0 in /usr/local/lib/python3.10/dist-packages (from pycaret) (4.1.0)
+Requirement already satisfied: markupsafe&gt;=2.0.1 in /usr/local/lib/python3.10/dist-packages (from pycaret) (2.1.3)
+Requirement already satisfied: matplotlib&lt;=3.6,&gt;=3.3.0 in /usr/local/lib/python3.10/dist-packages (from pycaret) (3.6.0)
+Requirement already satisfied: nbformat&gt;=4.2.0 in /usr/local/lib/python3.10/dist-packages (from pycaret) (5.9.2)
+Requirement already satisfied: numba&gt;=0.55.0 in /usr/local/lib/python3.10/dist-packages (from pycaret) (0.58.1)
+Requirement already satisfied: numpy&lt;1.27,&gt;=1.21 in /usr/local/lib/python3.10/dist-packages (from pycaret) (1.23.5)
+Requirement already satisfied: pandas&lt;2.0.0,&gt;=1.3.0 in /usr/local/lib/python3.10/dist-packages (from pycaret) (1.5.3)
+Requirement already satisfied: plotly-resampler&gt;=0.8.3.1 in /usr/local/lib/python3.10/dist-packages (from pycaret) (0.9.1)
+Requirement already satisfied: plotly&gt;=5.0.0 in /usr/local/lib/python3.10/dist-packages (from pycaret) (5.15.0)
+Requirement already satisfied: pmdarima!=1.8.1,&lt;3.0.0,&gt;=1.8.0 in /usr/local/lib/python3.10/dist-packages (from pycaret) (2.0.4)
+Requirement already satisfied: psutil&gt;=5.9.0 in /usr/local/lib/python3.10/dist-packages (from pycaret) (5.9.5)
+Requirement already satisfied: pyod&gt;=1.0.8 in /usr/local/lib/python3.10/dist-packages (from pycaret) (1.1.2)
+Requirement already satisfied: requests&gt;=2.27.1 in /usr/local/lib/python3.10/dist-packages (from pycaret) (2.31.0)
+Requirement already satisfied: schemdraw==0.15 in /usr/local/lib/python3.10/dist-packages (from pycaret) (0.15)
+Requirement already satisfied: scikit-learn&lt;1.3.0,&gt;=1.0 in /usr/local/lib/python3.10/dist-packages (from pycaret) (1.2.2)
+Requirement already satisfied: scikit-plot&gt;=0.3.7 in /usr/local/lib/python3.10/dist-packages (from pycaret) (0.3.7)
+Requirement already satisfied: scipy~=1.10.1 in /usr/local/lib/python3.10/dist-packages (from pycaret) (1.10.1)
+Requirement already satisfied: sktime!=0.17.1,!=0.17.2,!=0.18.0,&lt;0.22.0,&gt;=0.16.1 in /usr/local/lib/python3.10/dist-packages (from pycaret) (0.21.1)
+Requirement already satisfied: statsmodels&gt;=0.12.1 in /usr/local/lib/python3.10/dist-packages (from pycaret) (0.14.0)
+Requirement already satisfied: tbats&gt;=1.1.3 in /usr/local/lib/python3.10/dist-packages (from pycaret) (1.1.3)
+Requirement already satisfied: tqdm&gt;=4.62.0 in /usr/local/lib/python3.10/dist-packages (from pycaret) (4.66.1)
+Requirement already satisfied: xxhash in /usr/local/lib/python3.10/dist-packages (from pycaret) (3.4.1)
+Requirement already satisfied: yellowbrick&gt;=1.4 in /usr/local/lib/python3.10/dist-packages (from pycaret) (1.5)
+Requirement already satisfied: wurlitzer in /usr/local/lib/python3.10/dist-packages (from pycaret) (3.0.3)
+Requirement already satisfied: patsy&gt;=0.5.1 in /usr/local/lib/python3.10/dist-packages (from category-encoders&gt;=2.4.0-&gt;pycaret) (0.5.3)
+Requirement already satisfied: packaging in /usr/local/lib/python3.10/dist-packages (from deprecation&gt;=2.1.0-&gt;pycaret) (23.2)
+Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /usr/local/lib/python3.10/dist-packages (from imbalanced-learn&gt;=0.8.1-&gt;pycaret) (3.2.0)
+Requirement already satisfied: zipp&gt;=0.5 in /usr/local/lib/python3.10/dist-packages (from importlib-metadata&gt;=4.12.0-&gt;pycaret) (3.17.0)
+Requirement already satisfied: setuptools&gt;=18.5 in /usr/local/lib/python3.10/dist-packages (from ipython&gt;=5.5.0-&gt;pycaret) (67.7.2)
+Requirement already satisfied: jedi&gt;=0.16 in /usr/local/lib/python3.10/dist-packages (from ipython&gt;=5.5.0-&gt;pycaret) (0.19.1)
+Requirement already satisfied: decorator in /usr/local/lib/python3.10/dist-packages (from ipython&gt;=5.5.0-&gt;pycaret) (4.4.2)
+Requirement already satisfied: pickleshare in /usr/local/lib/python3.10/dist-packages (from ipython&gt;=5.5.0-&gt;pycaret) (0.7.5)
+Requirement already satisfied: traitlets&gt;=4.2 in /usr/local/lib/python3.10/dist-packages (from ipython&gt;=5.5.0-&gt;pycaret) (5.7.1)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,&lt;3.1.0,&gt;=2.0.0 in /usr/local/lib/python3.10/dist-packages (from ipython&gt;=5.5.0-&gt;pycaret) (3.0.41)
+Requirement already satisfied: pygments in /usr/local/lib/python3.10/dist-packages (from ipython&gt;=5.5.0-&gt;pycaret) (2.16.1)
+Requirement already satisfied: backcall in /usr/local/lib/python3.10/dist-packages (from ipython&gt;=5.5.0-&gt;pycaret) (0.2.0)
+Requirement already satisfied: matplotlib-inline in /usr/local/lib/python3.10/dist-packages (from ipython&gt;=5.5.0-&gt;pycaret) (0.1.6)
+Requirement already satisfied: pexpect&gt;4.3 in /usr/local/lib/python3.10/dist-packages (from ipython&gt;=5.5.0-&gt;pycaret) (4.9.0)
+Requirement already satisfied: ipykernel&gt;=4.5.1 in /usr/local/lib/python3.10/dist-packages (from ipywidgets&gt;=7.6.5-&gt;pycaret) (5.5.6)
+Requirement already satisfied: ipython-genutils~=0.2.0 in /usr/local/lib/python3.10/dist-packages (from ipywidgets&gt;=7.6.5-&gt;pycaret) (0.2.0)
+Requirement already satisfied: widgetsnbextension~=3.6.0 in /usr/local/lib/python3.10/dist-packages (from ipywidgets&gt;=7.6.5-&gt;pycaret) (3.6.6)
+Requirement already satisfied: jupyterlab-widgets&gt;=1.0.0 in /usr/local/lib/python3.10/dist-packages (from ipywidgets&gt;=7.6.5-&gt;pycaret) (3.0.9)
+Requirement already satisfied: contourpy&gt;=1.0.1 in /usr/local/lib/python3.10/dist-packages (from matplotlib&lt;=3.6,&gt;=3.3.0-&gt;pycaret) (1.2.0)
+Requirement already satisfied: cycler&gt;=0.10 in /usr/local/lib/python3.10/dist-packages (from matplotlib&lt;=3.6,&gt;=3.3.0-&gt;pycaret) (0.12.1)
+Requirement already satisfied: fonttools&gt;=4.22.0 in /usr/local/lib/python3.10/dist-packages (from matplotlib&lt;=3.6,&gt;=3.3.0-&gt;pycaret) (4.45.1)
+Requirement already satisfied: kiwisolver&gt;=1.0.1 in /usr/local/lib/python3.10/dist-packages (from matplotlib&lt;=3.6,&gt;=3.3.0-&gt;pycaret) (1.4.5)
+Requirement already satisfied: pillow&gt;=6.2.0 in /usr/local/lib/python3.10/dist-packages (from matplotlib&lt;=3.6,&gt;=3.3.0-&gt;pycaret) (9.4.0)
+Requirement already satisfied: pyparsing&gt;=2.2.1 in /usr/local/lib/python3.10/dist-packages (from matplotlib&lt;=3.6,&gt;=3.3.0-&gt;pycaret) (3.1.1)
+Requirement already satisfied: python-dateutil&gt;=2.7 in /usr/local/lib/python3.10/dist-packages (from matplotlib&lt;=3.6,&gt;=3.3.0-&gt;pycaret) (2.8.2)
+Requirement already satisfied: fastjsonschema in /usr/local/lib/python3.10/dist-packages (from nbformat&gt;=4.2.0-&gt;pycaret) (2.19.0)
+Requirement already satisfied: jsonschema&gt;=2.6 in /usr/local/lib/python3.10/dist-packages (from nbformat&gt;=4.2.0-&gt;pycaret) (4.19.2)
+Requirement already satisfied: jupyter-core in /usr/local/lib/python3.10/dist-packages (from nbformat&gt;=4.2.0-&gt;pycaret) (5.5.0)
+Requirement already satisfied: llvmlite&lt;0.42,&gt;=0.41.0dev0 in /usr/local/lib/python3.10/dist-packages (from numba&gt;=0.55.0-&gt;pycaret) (0.41.1)
+Requirement already satisfied: pytz&gt;=2020.1 in /usr/local/lib/python3.10/dist-packages (from pandas&lt;2.0.0,&gt;=1.3.0-&gt;pycaret) (2023.3.post1)
+Requirement already satisfied: tenacity&gt;=6.2.0 in /usr/local/lib/python3.10/dist-packages (from plotly&gt;=5.0.0-&gt;pycaret) (8.2.3)
+Requirement already satisfied: dash&lt;3.0.0,&gt;=2.11.0 in /usr/local/lib/python3.10/dist-packages (from plotly-resampler&gt;=0.8.3.1-&gt;pycaret) (2.14.2)
+Requirement already satisfied: orjson&lt;4.0.0,&gt;=3.8.0 in /usr/local/lib/python3.10/dist-packages (from plotly-resampler&gt;=0.8.3.1-&gt;pycaret) (3.9.10)
+Requirement already satisfied: trace-updater&gt;=0.0.8 in /usr/local/lib/python3.10/dist-packages (from plotly-resampler&gt;=0.8.3.1-&gt;pycaret) (0.0.9.1)
+Requirement already satisfied: tsdownsample==0.1.2 in /usr/local/lib/python3.10/dist-packages (from plotly-resampler&gt;=0.8.3.1-&gt;pycaret) (0.1.2)
+Requirement already satisfied: Cython!=0.29.18,!=0.29.31,&gt;=0.29 in /usr/local/lib/python3.10/dist-packages (from pmdarima!=1.8.1,&lt;3.0.0,&gt;=1.8.0-&gt;pycaret) (3.0.6)
+Requirement already satisfied: urllib3 in /usr/local/lib/python3.10/dist-packages (from pmdarima!=1.8.1,&lt;3.0.0,&gt;=1.8.0-&gt;pycaret) (2.0.7)
+Requirement already satisfied: six in /usr/local/lib/python3.10/dist-packages (from pyod&gt;=1.0.8-&gt;pycaret) (1.16.0)
+Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /usr/local/lib/python3.10/dist-packages (from requests&gt;=2.27.1-&gt;pycaret) (3.3.2)
+Requirement already satisfied: idna&lt;4,&gt;=2.5 in /usr/local/lib/python3.10/dist-packages (from requests&gt;=2.27.1-&gt;pycaret) (3.6)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.10/dist-packages (from requests&gt;=2.27.1-&gt;pycaret) (2023.11.17)
+Requirement already satisfied: deprecated&gt;=1.2.13 in /usr/local/lib/python3.10/dist-packages (from sktime!=0.17.1,!=0.17.2,!=0.18.0,&lt;0.22.0,&gt;=0.16.1-&gt;pycaret) (1.2.14)
+Requirement already satisfied: scikit-base&lt;0.6.0 in /usr/local/lib/python3.10/dist-packages (from sktime!=0.17.1,!=0.17.2,!=0.18.0,&lt;0.22.0,&gt;=0.16.1-&gt;pycaret) (0.5.2)
+Requirement already satisfied: Flask&lt;3.1,&gt;=1.0.4 in /usr/local/lib/python3.10/dist-packages (from dash&lt;3.0.0,&gt;=2.11.0-&gt;plotly-resampler&gt;=0.8.3.1-&gt;pycaret) (2.2.5)
+Requirement already satisfied: Werkzeug&lt;3.1 in /usr/local/lib/python3.10/dist-packages (from dash&lt;3.0.0,&gt;=2.11.0-&gt;plotly-resampler&gt;=0.8.3.1-&gt;pycaret) (3.0.1)
+Requirement already satisfied: dash-html-components==2.0.0 in /usr/local/lib/python3.10/dist-packages (from dash&lt;3.0.0,&gt;=2.11.0-&gt;plotly-resampler&gt;=0.8.3.1-&gt;pycaret) (2.0.0)
+Requirement already satisfied: dash-core-components==2.0.0 in /usr/local/lib/python3.10/dist-packages (from dash&lt;3.0.0,&gt;=2.11.0-&gt;plotly-resampler&gt;=0.8.3.1-&gt;pycaret) (2.0.0)
+Requirement already satisfied: dash-table==5.0.0 in /usr/local/lib/python3.10/dist-packages (from dash&lt;3.0.0,&gt;=2.11.0-&gt;plotly-resampler&gt;=0.8.3.1-&gt;pycaret) (5.0.0)
+Requirement already satisfied: typing-extensions&gt;=4.1.1 in /usr/local/lib/python3.10/dist-packages (from dash&lt;3.0.0,&gt;=2.11.0-&gt;plotly-resampler&gt;=0.8.3.1-&gt;pycaret) (4.5.0)
+Requirement already satisfied: retrying in /usr/local/lib/python3.10/dist-packages (from dash&lt;3.0.0,&gt;=2.11.0-&gt;plotly-resampler&gt;=0.8.3.1-&gt;pycaret) (1.3.4)
+Requirement already satisfied: ansi2html in /usr/local/lib/python3.10/dist-packages (from dash&lt;3.0.0,&gt;=2.11.0-&gt;plotly-resampler&gt;=0.8.3.1-&gt;pycaret) (1.8.0)
+Requirement already satisfied: nest-asyncio in /usr/local/lib/python3.10/dist-packages (from dash&lt;3.0.0,&gt;=2.11.0-&gt;plotly-resampler&gt;=0.8.3.1-&gt;pycaret) (1.5.8)
+Requirement already satisfied: wrapt&lt;2,&gt;=1.10 in /usr/local/lib/python3.10/dist-packages (from deprecated&gt;=1.2.13-&gt;sktime!=0.17.1,!=0.17.2,!=0.18.0,&lt;0.22.0,&gt;=0.16.1-&gt;pycaret) (1.14.1)
+Requirement already satisfied: jupyter-client in /usr/local/lib/python3.10/dist-packages (from ipykernel&gt;=4.5.1-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (6.1.12)
+Requirement already satisfied: tornado&gt;=4.2 in /usr/local/lib/python3.10/dist-packages (from ipykernel&gt;=4.5.1-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (6.3.2)
+Requirement already satisfied: parso&lt;0.9.0,&gt;=0.8.3 in /usr/local/lib/python3.10/dist-packages (from jedi&gt;=0.16-&gt;ipython&gt;=5.5.0-&gt;pycaret) (0.8.3)
+Requirement already satisfied: attrs&gt;=22.2.0 in /usr/local/lib/python3.10/dist-packages (from jsonschema&gt;=2.6-&gt;nbformat&gt;=4.2.0-&gt;pycaret) (23.1.0)
+Requirement already satisfied: jsonschema-specifications&gt;=2023.03.6 in /usr/local/lib/python3.10/dist-packages (from jsonschema&gt;=2.6-&gt;nbformat&gt;=4.2.0-&gt;pycaret) (2023.11.1)
+Requirement already satisfied: referencing&gt;=0.28.4 in /usr/local/lib/python3.10/dist-packages (from jsonschema&gt;=2.6-&gt;nbformat&gt;=4.2.0-&gt;pycaret) (0.31.1)
+Requirement already satisfied: rpds-py&gt;=0.7.1 in /usr/local/lib/python3.10/dist-packages (from jsonschema&gt;=2.6-&gt;nbformat&gt;=4.2.0-&gt;pycaret) (0.13.2)
+Requirement already satisfied: ptyprocess&gt;=0.5 in /usr/local/lib/python3.10/dist-packages (from pexpect&gt;4.3-&gt;ipython&gt;=5.5.0-&gt;pycaret) (0.7.0)
+Requirement already satisfied: wcwidth in /usr/local/lib/python3.10/dist-packages (from prompt-toolkit!=3.0.0,!=3.0.1,&lt;3.1.0,&gt;=2.0.0-&gt;ipython&gt;=5.5.0-&gt;pycaret) (0.2.12)
+Requirement already satisfied: notebook&gt;=4.4.1 in /usr/local/lib/python3.10/dist-packages (from widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (6.5.5)
+Requirement already satisfied: platformdirs&gt;=2.5 in /usr/local/lib/python3.10/dist-packages (from jupyter-core-&gt;nbformat&gt;=4.2.0-&gt;pycaret) (4.0.0)
+Requirement already satisfied: itsdangerous&gt;=2.0 in /usr/local/lib/python3.10/dist-packages (from Flask&lt;3.1,&gt;=1.0.4-&gt;dash&lt;3.0.0,&gt;=2.11.0-&gt;plotly-resampler&gt;=0.8.3.1-&gt;pycaret) (2.1.2)
+Requirement already satisfied: click&gt;=8.0 in /usr/local/lib/python3.10/dist-packages (from Flask&lt;3.1,&gt;=1.0.4-&gt;dash&lt;3.0.0,&gt;=2.11.0-&gt;plotly-resampler&gt;=0.8.3.1-&gt;pycaret) (8.1.7)
+Requirement already satisfied: pyzmq&lt;25,&gt;=17 in /usr/local/lib/python3.10/dist-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (23.2.1)
+Requirement already satisfied: argon2-cffi in /usr/local/lib/python3.10/dist-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (23.1.0)
+Requirement already satisfied: nbconvert&gt;=5 in /usr/local/lib/python3.10/dist-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (6.5.4)
+Requirement already satisfied: Send2Trash&gt;=1.8.0 in /usr/local/lib/python3.10/dist-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (1.8.2)
+Requirement already satisfied: terminado&gt;=0.8.3 in /usr/local/lib/python3.10/dist-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (0.18.0)
+Requirement already satisfied: prometheus-client in /usr/local/lib/python3.10/dist-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (0.19.0)
+Requirement already satisfied: nbclassic&gt;=0.4.7 in /usr/local/lib/python3.10/dist-packages (from notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (1.0.0)
+Requirement already satisfied: jupyter-server&gt;=1.8 in /usr/local/lib/python3.10/dist-packages (from nbclassic&gt;=0.4.7-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (1.24.0)
+Requirement already satisfied: notebook-shim&gt;=0.2.3 in /usr/local/lib/python3.10/dist-packages (from nbclassic&gt;=0.4.7-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (0.2.3)
+Requirement already satisfied: lxml in /usr/local/lib/python3.10/dist-packages (from nbconvert&gt;=5-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (4.9.3)
+Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.10/dist-packages (from nbconvert&gt;=5-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (4.11.2)
+Requirement already satisfied: bleach in /usr/local/lib/python3.10/dist-packages (from nbconvert&gt;=5-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (6.1.0)
+Requirement already satisfied: defusedxml in /usr/local/lib/python3.10/dist-packages (from nbconvert&gt;=5-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (0.7.1)
+Requirement already satisfied: entrypoints&gt;=0.2.2 in /usr/local/lib/python3.10/dist-packages (from nbconvert&gt;=5-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (0.4)
+Requirement already satisfied: jupyterlab-pygments in /usr/local/lib/python3.10/dist-packages (from nbconvert&gt;=5-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (0.3.0)
+Requirement already satisfied: mistune&lt;2,&gt;=0.8.1 in /usr/local/lib/python3.10/dist-packages (from nbconvert&gt;=5-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (0.8.4)
+Requirement already satisfied: nbclient&gt;=0.5.0 in /usr/local/lib/python3.10/dist-packages (from nbconvert&gt;=5-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (0.9.0)
+Requirement already satisfied: pandocfilters&gt;=1.4.1 in /usr/local/lib/python3.10/dist-packages (from nbconvert&gt;=5-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (1.5.0)
+Requirement already satisfied: tinycss2 in /usr/local/lib/python3.10/dist-packages (from nbconvert&gt;=5-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (1.2.1)
+Requirement already satisfied: argon2-cffi-bindings in /usr/local/lib/python3.10/dist-packages (from argon2-cffi-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (21.2.0)
+Requirement already satisfied: anyio&lt;4,&gt;=3.1.0 in /usr/local/lib/python3.10/dist-packages (from jupyter-server&gt;=1.8-&gt;nbclassic&gt;=0.4.7-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (3.7.1)
+Requirement already satisfied: websocket-client in /usr/local/lib/python3.10/dist-packages (from jupyter-server&gt;=1.8-&gt;nbclassic&gt;=0.4.7-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (1.6.4)
+Requirement already satisfied: cffi&gt;=1.0.1 in /usr/local/lib/python3.10/dist-packages (from argon2-cffi-bindings-&gt;argon2-cffi-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (1.16.0)
+Requirement already satisfied: soupsieve&gt;1.2 in /usr/local/lib/python3.10/dist-packages (from beautifulsoup4-&gt;nbconvert&gt;=5-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (2.5)
+Requirement already satisfied: webencodings in /usr/local/lib/python3.10/dist-packages (from bleach-&gt;nbconvert&gt;=5-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (0.5.1)
+Requirement already satisfied: sniffio&gt;=1.1 in /usr/local/lib/python3.10/dist-packages (from anyio&lt;4,&gt;=3.1.0-&gt;jupyter-server&gt;=1.8-&gt;nbclassic&gt;=0.4.7-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (1.3.0)
+Requirement already satisfied: exceptiongroup in /usr/local/lib/python3.10/dist-packages (from anyio&lt;4,&gt;=3.1.0-&gt;jupyter-server&gt;=1.8-&gt;nbclassic&gt;=0.4.7-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (1.2.0)
+Requirement already satisfied: pycparser in /usr/local/lib/python3.10/dist-packages (from cffi&gt;=1.0.1-&gt;argon2-cffi-bindings-&gt;argon2-cffi-&gt;notebook&gt;=4.4.1-&gt;widgetsnbextension~=3.6.0-&gt;ipywidgets&gt;=7.6.5-&gt;pycaret) (2.21)
+</pre></div>
+</div>
+</div>
+</div>
+<p>Berikut Code penggunaan PyCaret beserta penjelasannya :</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pycaret.classification</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1">#Membaca data dari file CSV</span>
+<span class="n">dt</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/niswatulsifa/PSD/main/cervical-cancer.csv&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dt</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+
+<span class="c1">#Memilih kolom-kolom yang perlu dinormalisasi</span>
+<span class="n">kolom</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;behavior_sexualRisk&#39;</span><span class="p">,</span> <span class="s1">&#39;behavior_eating&#39;</span><span class="p">,</span> <span class="s1">&#39;behavior_personalHygine&#39;</span><span class="p">,</span>	<span class="s1">&#39;intention_aggregation&#39;</span><span class="p">,</span>
+         <span class="s1">&#39;intention_commitment&#39;</span><span class="p">,</span> <span class="s1">&#39;attitude_spontaneity&#39;</span><span class="p">,</span> <span class="s1">&#39;norm_significantPerson&#39;</span><span class="p">,</span> <span class="s1">&#39;norm_fulfillment&#39;</span><span class="p">,</span>
+         <span class="s1">&#39;perception_severity&#39;</span><span class="p">,</span> <span class="s1">&#39;motivation_strength&#39;</span><span class="p">,</span> <span class="s1">&#39;empowerment_knowledge&#39;</span><span class="p">,</span> <span class="s1">&#39;empowerment_abilities&#39;</span><span class="p">,</span>
+         <span class="s1">&#39;empowerment_desires&#39;</span><span class="p">]</span>
+
+<span class="c1">#Split data menjadi fitur (X) dan target (y)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">dt</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;ca_cervix&#39;</span><span class="p">])</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">dt</span><span class="p">[</span><span class="s1">&#39;ca_cervix&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;behavior_sexualRisk&#39;, &#39;behavior_eating&#39;, &#39;behavior_personalHygine&#39;,
+       &#39;intention_aggregation&#39;, &#39;intention_commitment&#39;, &#39;attitude_consistency&#39;,
+       &#39;attitude_spontaneity&#39;, &#39;norm_significantPerson&#39;, &#39;norm_fulfillment&#39;,
+       &#39;perception_vulnerability&#39;, &#39;perception_severity&#39;,
+       &#39;motivation_strength&#39;, &#39;motivation_willingness&#39;,
+       &#39;socialSupport_emotionality&#39;, &#39;socialSupport_appreciation&#39;,
+       &#39;socialSupport_instrumental&#39;, &#39;empowerment_knowledge&#39;,
+       &#39;empowerment_abilities&#39;, &#39;empowerment_desires&#39;, &#39;ca_cervix&#39;],
+      dtype=&#39;object&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<p>Pada langkah selanjutnya yaitu terdapat Fungsi setup() yang digunakan untuk menyiapkan lingkungan PyCaret dengan menyediakan dataset dan menentukan target serta beberapa konfigurasi lainnya. PyCaret secara otomatis akan melakukan beberapa langkah pra-pemrosesan data dan menampilkan informasi statistik dasar tentang dataset.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Inisialisasi eksperimen PyCaret</span>
+<span class="n">exp</span> <span class="o">=</span> <span class="n">setup</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">dt</span><span class="p">,</span> <span class="n">target</span><span class="o">=</span><span class="s1">&#39;ca_cervix&#39;</span><span class="p">,</span> <span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">train_size</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">normalize_method</span><span class="o">=</span><span class="s1">&#39;minmax&#39;</span><span class="p">,</span> <span class="n">pca</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">pca_method</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">,</span> <span class="n">pca_components</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">numeric_features</span><span class="o">=</span><span class="n">kolom</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style type="text/css">
+#T_c1810_row8_col1, #T_c1810_row12_col1, #T_c1810_row14_col1 {
+  background-color: lightgreen;
+}
+</style>
+<table id="T_c1810" class="dataframe">
+  <thead>
+    <tr>
+      <th class="blank level0" >&nbsp;</th>
+      <th id="T_c1810_level0_col0" class="col_heading level0 col0" >Description</th>
+      <th id="T_c1810_level0_col1" class="col_heading level0 col1" >Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="T_c1810_level0_row0" class="row_heading level0 row0" >0</th>
+      <td id="T_c1810_row0_col0" class="data row0 col0" >Session id</td>
+      <td id="T_c1810_row0_col1" class="data row0 col1" >1487</td>
+    </tr>
+    <tr>
+      <th id="T_c1810_level0_row1" class="row_heading level0 row1" >1</th>
+      <td id="T_c1810_row1_col0" class="data row1 col0" >Target</td>
+      <td id="T_c1810_row1_col1" class="data row1 col1" >ca_cervix</td>
+    </tr>
+    <tr>
+      <th id="T_c1810_level0_row2" class="row_heading level0 row2" >2</th>
+      <td id="T_c1810_row2_col0" class="data row2 col0" >Target type</td>
+      <td id="T_c1810_row2_col1" class="data row2 col1" >Binary</td>
+    </tr>
+    <tr>
+      <th id="T_c1810_level0_row3" class="row_heading level0 row3" >3</th>
+      <td id="T_c1810_row3_col0" class="data row3 col0" >Original data shape</td>
+      <td id="T_c1810_row3_col1" class="data row3 col1" >(72, 20)</td>
+    </tr>
+    <tr>
+      <th id="T_c1810_level0_row4" class="row_heading level0 row4" >4</th>
+      <td id="T_c1810_row4_col0" class="data row4 col0" >Transformed data shape</td>
+      <td id="T_c1810_row4_col1" class="data row4 col1" >(72, 16)</td>
+    </tr>
+    <tr>
+      <th id="T_c1810_level0_row5" class="row_heading level0 row5" >5</th>
+      <td id="T_c1810_row5_col0" class="data row5 col0" >Transformed train set shape</td>
+      <td id="T_c1810_row5_col1" class="data row5 col1" >(57, 16)</td>
+    </tr>
+    <tr>
+      <th id="T_c1810_level0_row6" class="row_heading level0 row6" >6</th>
+      <td id="T_c1810_row6_col0" class="data row6 col0" >Transformed test set shape</td>
+      <td id="T_c1810_row6_col1" class="data row6 col1" >(15, 16)</td>
+    </tr>
+    <tr>
+      <th id="T_c1810_level0_row7" class="row_heading level0 row7" >7</th>
+      <td id="T_c1810_row7_col0" class="data row7 col0" >Numeric features</td>
+      <td id="T_c1810_row7_col1" class="data row7 col1" >13</td>
+    </tr>
+    <tr>
+      <th id="T_c1810_level0_row8" class="row_heading level0 row8" >8</th>
+      <td id="T_c1810_row8_col0" class="data row8 col0" >Preprocess</td>
+      <td id="T_c1810_row8_col1" class="data row8 col1" >True</td>
+    </tr>
+    <tr>
+      <th id="T_c1810_level0_row9" class="row_heading level0 row9" >9</th>
+      <td id="T_c1810_row9_col0" class="data row9 col0" >Imputation type</td>
+      <td id="T_c1810_row9_col1" class="data row9 col1" >simple</td>
+    </tr>
+    <tr>
+      <th id="T_c1810_level0_row10" class="row_heading level0 row10" >10</th>
+      <td id="T_c1810_row10_col0" class="data row10 col0" >Numeric imputation</td>
+      <td id="T_c1810_row10_col1" class="data row10 col1" >mean</td>
+    </tr>
+    <tr>
+      <th id="T_c1810_level0_row11" class="row_heading level0 row11" >11</th>
+      <td id="T_c1810_row11_col0" class="data row11 col0" >Categorical imputation</td>
+      <td id="T_c1810_row11_col1" class="data row11 col1" >mode</td>
+    </tr>
+    <tr>
+      <th id="T_c1810_level0_row12" class="row_heading level0 row12" >12</th>
+      <td id="T_c1810_row12_col0" class="data row12 col0" >Normalize</td>
+      <td id="T_c1810_row12_col1" class="data row12 col1" >True</td>
+    </tr>
+    <tr>
+      <th id="T_c1810_level0_row13" class="row_heading level0 row13" >13</th>
+      <td id="T_c1810_row13_col0" class="data row13 col0" >Normalize method</td>
+      <td id="T_c1810_row13_col1" class="data row13 col1" >minmax</td>
+    </tr>
+    <tr>
+      <th id="T_c1810_level0_row14" class="row_heading level0 row14" >14</th>
+      <td id="T_c1810_row14_col0" class="data row14 col0" >PCA</td>
+      <td id="T_c1810_row14_col1" class="data row14 col1" >True</td>
+    </tr>
+    <tr>
+      <th id="T_c1810_level0_row15" class="row_heading level0 row15" >15</th>
+      <td id="T_c1810_row15_col0" class="data row15 col0" >PCA method</td>
+      <td id="T_c1810_row15_col1" class="data row15 col1" >linear</td>
+    </tr>
+    <tr>
+      <th id="T_c1810_level0_row16" class="row_heading level0 row16" >16</th>
+      <td id="T_c1810_row16_col0" class="data row16 col0" >PCA components</td>
+      <td id="T_c1810_row16_col1" class="data row16 col1" >15</td>
+    </tr>
+    <tr>
+      <th id="T_c1810_level0_row17" class="row_heading level0 row17" >17</th>
+      <td id="T_c1810_row17_col0" class="data row17 col0" >Fold Generator</td>
+      <td id="T_c1810_row17_col1" class="data row17 col1" >StratifiedKFold</td>
+    </tr>
+    <tr>
+      <th id="T_c1810_level0_row18" class="row_heading level0 row18" >18</th>
+      <td id="T_c1810_row18_col0" class="data row18 col0" >Fold Number</td>
+      <td id="T_c1810_row18_col1" class="data row18 col1" >10</td>
+    </tr>
+    <tr>
+      <th id="T_c1810_level0_row19" class="row_heading level0 row19" >19</th>
+      <td id="T_c1810_row19_col0" class="data row19 col0" >CPU Jobs</td>
+      <td id="T_c1810_row19_col1" class="data row19 col1" >-1</td>
+    </tr>
+    <tr>
+      <th id="T_c1810_level0_row20" class="row_heading level0 row20" >20</th>
+      <td id="T_c1810_row20_col0" class="data row20 col0" >Use GPU</td>
+      <td id="T_c1810_row20_col1" class="data row20 col1" >False</td>
+    </tr>
+    <tr>
+      <th id="T_c1810_level0_row21" class="row_heading level0 row21" >21</th>
+      <td id="T_c1810_row21_col0" class="data row21 col0" >Log Experiment</td>
+      <td id="T_c1810_row21_col1" class="data row21 col1" >False</td>
+    </tr>
+    <tr>
+      <th id="T_c1810_level0_row22" class="row_heading level0 row22" >22</th>
+      <td id="T_c1810_row22_col0" class="data row22 col0" >Experiment Name</td>
+      <td id="T_c1810_row22_col1" class="data row22 col1" >clf-default-name</td>
+    </tr>
+    <tr>
+      <th id="T_c1810_level0_row23" class="row_heading level0 row23" >23</th>
+      <td id="T_c1810_row23_col0" class="data row23 col0" >USI</td>
+      <td id="T_c1810_row23_col1" class="data row23 col1" >1d5d</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<p>Adapun Inisialisasi Eksperimen PyCaret code diatas yaitu :</p>
+<p>data : Menentukan dataset.</p>
+<p>target : Menentukan kolom target.</p>
+<p>normalize : Normalisasi fitur diaktifkan.</p>
+<p>train_size : Menentukan jumlah data latih.</p>
+<p>normalize_method : Metode normalisasi, dalam hal ini menggunakan Z-score normalization.</p>
+<p>pca : PCA (Principal Component Analysis) diaktifkan.</p>
+<p>pca_method : Metode PCA, dalam hal ini menggunakan metode linear.</p>
+<p>pca_components : Jumlah komponen PCA yang akan dihasilkan (yaitu 15 komponen).</p>
+<p>numeric_features : Kolom-kolom yang akan dinormalisasi.</p>
+<p>Pada langkah selanjutnya yaitu terdapat fungsi compare_models yang mana secara cepat membandingkan performa beberapa model machine learning tanpa perlu menulis banyak kode dan memberikan model terbaik berdasarkan metrik kinerja yang dihasilkan.</p>
+<p>best_model: Ini adalah model terbaik yang dihasilkan dari fungsi compare_models dan kemudian dicetak.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Membandingkan model dan cari model yang terbaik</span>
+<span class="n">best_model</span> <span class="o">=</span> <span class="n">compare_models</span><span class="p">()</span>
+<span class="n">best_model</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"></div><div class="output text_html"><style type="text/css">
+#T_2d35a th {
+  text-align: left;
+}
+#T_2d35a_row0_col0, #T_2d35a_row0_col3, #T_2d35a_row1_col0, #T_2d35a_row1_col1, #T_2d35a_row1_col2, #T_2d35a_row1_col3, #T_2d35a_row1_col4, #T_2d35a_row1_col5, #T_2d35a_row1_col6, #T_2d35a_row1_col7, #T_2d35a_row2_col0, #T_2d35a_row2_col1, #T_2d35a_row2_col2, #T_2d35a_row2_col4, #T_2d35a_row2_col6, #T_2d35a_row2_col7, #T_2d35a_row3_col0, #T_2d35a_row3_col1, #T_2d35a_row3_col2, #T_2d35a_row3_col3, #T_2d35a_row3_col4, #T_2d35a_row3_col5, #T_2d35a_row3_col6, #T_2d35a_row3_col7, #T_2d35a_row4_col0, #T_2d35a_row4_col1, #T_2d35a_row4_col3, #T_2d35a_row4_col4, #T_2d35a_row4_col5, #T_2d35a_row4_col6, #T_2d35a_row4_col7, #T_2d35a_row5_col0, #T_2d35a_row5_col1, #T_2d35a_row5_col2, #T_2d35a_row5_col3, #T_2d35a_row5_col4, #T_2d35a_row5_col5, #T_2d35a_row5_col6, #T_2d35a_row5_col7, #T_2d35a_row6_col0, #T_2d35a_row6_col1, #T_2d35a_row6_col2, #T_2d35a_row6_col3, #T_2d35a_row6_col4, #T_2d35a_row6_col5, #T_2d35a_row6_col6, #T_2d35a_row6_col7, #T_2d35a_row7_col0, #T_2d35a_row7_col1, #T_2d35a_row7_col2, #T_2d35a_row7_col3, #T_2d35a_row7_col4, #T_2d35a_row7_col5, #T_2d35a_row7_col6, #T_2d35a_row7_col7, #T_2d35a_row8_col0, #T_2d35a_row8_col1, #T_2d35a_row8_col2, #T_2d35a_row8_col3, #T_2d35a_row8_col4, #T_2d35a_row8_col5, #T_2d35a_row8_col6, #T_2d35a_row8_col7, #T_2d35a_row9_col0, #T_2d35a_row9_col1, #T_2d35a_row9_col2, #T_2d35a_row9_col3, #T_2d35a_row9_col4, #T_2d35a_row9_col5, #T_2d35a_row9_col6, #T_2d35a_row9_col7, #T_2d35a_row10_col0, #T_2d35a_row10_col1, #T_2d35a_row10_col2, #T_2d35a_row10_col3, #T_2d35a_row10_col4, #T_2d35a_row10_col5, #T_2d35a_row10_col6, #T_2d35a_row10_col7, #T_2d35a_row11_col0, #T_2d35a_row11_col1, #T_2d35a_row11_col2, #T_2d35a_row11_col3, #T_2d35a_row11_col4, #T_2d35a_row11_col5, #T_2d35a_row11_col6, #T_2d35a_row11_col7, #T_2d35a_row12_col0, #T_2d35a_row12_col1, #T_2d35a_row12_col2, #T_2d35a_row12_col3, #T_2d35a_row12_col4, #T_2d35a_row12_col5, #T_2d35a_row12_col6, #T_2d35a_row12_col7, #T_2d35a_row13_col0, #T_2d35a_row13_col1, #T_2d35a_row13_col2, #T_2d35a_row13_col3, #T_2d35a_row13_col4, #T_2d35a_row13_col5, #T_2d35a_row13_col6, #T_2d35a_row13_col7, #T_2d35a_row14_col0, #T_2d35a_row14_col1, #T_2d35a_row14_col2, #T_2d35a_row14_col3, #T_2d35a_row14_col4, #T_2d35a_row14_col5, #T_2d35a_row14_col6, #T_2d35a_row14_col7 {
+  text-align: left;
+}
+#T_2d35a_row0_col1, #T_2d35a_row0_col2, #T_2d35a_row0_col4, #T_2d35a_row0_col5, #T_2d35a_row0_col6, #T_2d35a_row0_col7, #T_2d35a_row2_col3, #T_2d35a_row2_col5, #T_2d35a_row4_col2 {
+  text-align: left;
+  background-color: yellow;
+}
+#T_2d35a_row0_col8, #T_2d35a_row1_col8, #T_2d35a_row3_col8, #T_2d35a_row4_col8, #T_2d35a_row6_col8, #T_2d35a_row7_col8, #T_2d35a_row8_col8, #T_2d35a_row9_col8, #T_2d35a_row10_col8, #T_2d35a_row11_col8, #T_2d35a_row12_col8, #T_2d35a_row13_col8 {
+  text-align: left;
+  background-color: lightgrey;
+}
+#T_2d35a_row2_col8, #T_2d35a_row5_col8, #T_2d35a_row14_col8 {
+  text-align: left;
+  background-color: yellow;
+  background-color: lightgrey;
+}
+</style>
+<table id="T_2d35a" class="dataframe">
+  <thead>
+    <tr>
+      <th class="blank level0" >&nbsp;</th>
+      <th id="T_2d35a_level0_col0" class="col_heading level0 col0" >Model</th>
+      <th id="T_2d35a_level0_col1" class="col_heading level0 col1" >Accuracy</th>
+      <th id="T_2d35a_level0_col2" class="col_heading level0 col2" >AUC</th>
+      <th id="T_2d35a_level0_col3" class="col_heading level0 col3" >Recall</th>
+      <th id="T_2d35a_level0_col4" class="col_heading level0 col4" >Prec.</th>
+      <th id="T_2d35a_level0_col5" class="col_heading level0 col5" >F1</th>
+      <th id="T_2d35a_level0_col6" class="col_heading level0 col6" >Kappa</th>
+      <th id="T_2d35a_level0_col7" class="col_heading level0 col7" >MCC</th>
+      <th id="T_2d35a_level0_col8" class="col_heading level0 col8" >TT (Sec)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="T_2d35a_level0_row0" class="row_heading level0 row0" >et</th>
+      <td id="T_2d35a_row0_col0" class="data row0 col0" >Extra Trees Classifier</td>
+      <td id="T_2d35a_row0_col1" class="data row0 col1" >0.9333</td>
+      <td id="T_2d35a_row0_col2" class="data row0 col2" >1.0000</td>
+      <td id="T_2d35a_row0_col3" class="data row0 col3" >0.8000</td>
+      <td id="T_2d35a_row0_col4" class="data row0 col4" >0.9000</td>
+      <td id="T_2d35a_row0_col5" class="data row0 col5" >0.8333</td>
+      <td id="T_2d35a_row0_col6" class="data row0 col6" >0.8143</td>
+      <td id="T_2d35a_row0_col7" class="data row0 col7" >0.8265</td>
+      <td id="T_2d35a_row0_col8" class="data row0 col8" >0.1740</td>
+    </tr>
+    <tr>
+      <th id="T_2d35a_level0_row1" class="row_heading level0 row1" >lr</th>
+      <td id="T_2d35a_row1_col0" class="data row1 col0" >Logistic Regression</td>
+      <td id="T_2d35a_row1_col1" class="data row1 col1" >0.8933</td>
+      <td id="T_2d35a_row1_col2" class="data row1 col2" >0.9500</td>
+      <td id="T_2d35a_row1_col3" class="data row1 col3" >0.7000</td>
+      <td id="T_2d35a_row1_col4" class="data row1 col4" >0.7500</td>
+      <td id="T_2d35a_row1_col5" class="data row1 col5" >0.7000</td>
+      <td id="T_2d35a_row1_col6" class="data row1 col6" >0.6688</td>
+      <td id="T_2d35a_row1_col7" class="data row1 col7" >0.6877</td>
+      <td id="T_2d35a_row1_col8" class="data row1 col8" >0.5090</td>
+    </tr>
+    <tr>
+      <th id="T_2d35a_level0_row2" class="row_heading level0 row2" >svm</th>
+      <td id="T_2d35a_row2_col0" class="data row2 col0" >SVM - Linear Kernel</td>
+      <td id="T_2d35a_row2_col1" class="data row2 col1" >0.8933</td>
+      <td id="T_2d35a_row2_col2" class="data row2 col2" >0.0000</td>
+      <td id="T_2d35a_row2_col3" class="data row2 col3" >0.9000</td>
+      <td id="T_2d35a_row2_col4" class="data row2 col4" >0.8500</td>
+      <td id="T_2d35a_row2_col5" class="data row2 col5" >0.8333</td>
+      <td id="T_2d35a_row2_col6" class="data row2 col6" >0.7634</td>
+      <td id="T_2d35a_row2_col7" class="data row2 col7" >0.7990</td>
+      <td id="T_2d35a_row2_col8" class="data row2 col8" >0.0390</td>
+    </tr>
+    <tr>
+      <th id="T_2d35a_level0_row3" class="row_heading level0 row3" >ada</th>
+      <td id="T_2d35a_row3_col0" class="data row3 col0" >Ada Boost Classifier</td>
+      <td id="T_2d35a_row3_col1" class="data row3 col1" >0.8933</td>
+      <td id="T_2d35a_row3_col2" class="data row3 col2" >0.9375</td>
+      <td id="T_2d35a_row3_col3" class="data row3 col3" >0.8500</td>
+      <td id="T_2d35a_row3_col4" class="data row3 col4" >0.8000</td>
+      <td id="T_2d35a_row3_col5" class="data row3 col5" >0.8000</td>
+      <td id="T_2d35a_row3_col6" class="data row3 col6" >0.7377</td>
+      <td id="T_2d35a_row3_col7" class="data row3 col7" >0.7541</td>
+      <td id="T_2d35a_row3_col8" class="data row3 col8" >0.1980</td>
+    </tr>
+    <tr>
+      <th id="T_2d35a_level0_row4" class="row_heading level0 row4" >rf</th>
+      <td id="T_2d35a_row4_col0" class="data row4 col0" >Random Forest Classifier</td>
+      <td id="T_2d35a_row4_col1" class="data row4 col1" >0.8800</td>
+      <td id="T_2d35a_row4_col2" class="data row4 col2" >1.0000</td>
+      <td id="T_2d35a_row4_col3" class="data row4 col3" >0.7000</td>
+      <td id="T_2d35a_row4_col4" class="data row4 col4" >0.8500</td>
+      <td id="T_2d35a_row4_col5" class="data row4 col5" >0.7333</td>
+      <td id="T_2d35a_row4_col6" class="data row4 col6" >0.6831</td>
+      <td id="T_2d35a_row4_col7" class="data row4 col7" >0.7142</td>
+      <td id="T_2d35a_row4_col8" class="data row4 col8" >0.3620</td>
+    </tr>
+    <tr>
+      <th id="T_2d35a_level0_row5" class="row_heading level0 row5" >ridge</th>
+      <td id="T_2d35a_row5_col0" class="data row5 col0" >Ridge Classifier</td>
+      <td id="T_2d35a_row5_col1" class="data row5 col1" >0.8767</td>
+      <td id="T_2d35a_row5_col2" class="data row5 col2" >0.0000</td>
+      <td id="T_2d35a_row5_col3" class="data row5 col3" >0.7500</td>
+      <td id="T_2d35a_row5_col4" class="data row5 col4" >0.7833</td>
+      <td id="T_2d35a_row5_col5" class="data row5 col5" >0.7400</td>
+      <td id="T_2d35a_row5_col6" class="data row5 col6" >0.6688</td>
+      <td id="T_2d35a_row5_col7" class="data row5 col7" >0.6877</td>
+      <td id="T_2d35a_row5_col8" class="data row5 col8" >0.0390</td>
+    </tr>
+    <tr>
+      <th id="T_2d35a_level0_row6" class="row_heading level0 row6" >knn</th>
+      <td id="T_2d35a_row6_col0" class="data row6 col0" >K Neighbors Classifier</td>
+      <td id="T_2d35a_row6_col1" class="data row6 col1" >0.8600</td>
+      <td id="T_2d35a_row6_col2" class="data row6 col2" >0.9188</td>
+      <td id="T_2d35a_row6_col3" class="data row6 col3" >0.6500</td>
+      <td id="T_2d35a_row6_col4" class="data row6 col4" >0.6500</td>
+      <td id="T_2d35a_row6_col5" class="data row6 col5" >0.6333</td>
+      <td id="T_2d35a_row6_col6" class="data row6 col6" >0.5831</td>
+      <td id="T_2d35a_row6_col7" class="data row6 col7" >0.5929</td>
+      <td id="T_2d35a_row6_col8" class="data row6 col8" >0.0560</td>
+    </tr>
+    <tr>
+      <th id="T_2d35a_level0_row7" class="row_heading level0 row7" >nb</th>
+      <td id="T_2d35a_row7_col0" class="data row7 col0" >Naive Bayes</td>
+      <td id="T_2d35a_row7_col1" class="data row7 col1" >0.8600</td>
+      <td id="T_2d35a_row7_col2" class="data row7 col2" >0.9625</td>
+      <td id="T_2d35a_row7_col3" class="data row7 col3" >0.6500</td>
+      <td id="T_2d35a_row7_col4" class="data row7 col4" >0.7000</td>
+      <td id="T_2d35a_row7_col5" class="data row7 col5" >0.6500</td>
+      <td id="T_2d35a_row7_col6" class="data row7 col6" >0.5938</td>
+      <td id="T_2d35a_row7_col7" class="data row7 col7" >0.6127</td>
+      <td id="T_2d35a_row7_col8" class="data row7 col8" >0.0410</td>
+    </tr>
+    <tr>
+      <th id="T_2d35a_level0_row8" class="row_heading level0 row8" >lda</th>
+      <td id="T_2d35a_row8_col0" class="data row8 col0" >Linear Discriminant Analysis</td>
+      <td id="T_2d35a_row8_col1" class="data row8 col1" >0.8600</td>
+      <td id="T_2d35a_row8_col2" class="data row8 col2" >0.9000</td>
+      <td id="T_2d35a_row8_col3" class="data row8 col3" >0.7500</td>
+      <td id="T_2d35a_row8_col4" class="data row8 col4" >0.7333</td>
+      <td id="T_2d35a_row8_col5" class="data row8 col5" >0.7233</td>
+      <td id="T_2d35a_row8_col6" class="data row8 col6" >0.6367</td>
+      <td id="T_2d35a_row8_col7" class="data row8 col7" >0.6495</td>
+      <td id="T_2d35a_row8_col8" class="data row8 col8" >0.0420</td>
+    </tr>
+    <tr>
+      <th id="T_2d35a_level0_row9" class="row_heading level0 row9" >xgboost</th>
+      <td id="T_2d35a_row9_col0" class="data row9 col0" >Extreme Gradient Boosting</td>
+      <td id="T_2d35a_row9_col1" class="data row9 col1" >0.8600</td>
+      <td id="T_2d35a_row9_col2" class="data row9 col2" >0.9500</td>
+      <td id="T_2d35a_row9_col3" class="data row9 col3" >0.7500</td>
+      <td id="T_2d35a_row9_col4" class="data row9 col4" >0.8000</td>
+      <td id="T_2d35a_row9_col5" class="data row9 col5" >0.7333</td>
+      <td id="T_2d35a_row9_col6" class="data row9 col6" >0.6519</td>
+      <td id="T_2d35a_row9_col7" class="data row9 col7" >0.6806</td>
+      <td id="T_2d35a_row9_col8" class="data row9 col8" >0.0700</td>
+    </tr>
+    <tr>
+      <th id="T_2d35a_level0_row10" class="row_heading level0 row10" >lightgbm</th>
+      <td id="T_2d35a_row10_col0" class="data row10 col0" >Light Gradient Boosting Machine</td>
+      <td id="T_2d35a_row10_col1" class="data row10 col1" >0.8433</td>
+      <td id="T_2d35a_row10_col2" class="data row10 col2" >0.9000</td>
+      <td id="T_2d35a_row10_col3" class="data row10 col3" >0.7000</td>
+      <td id="T_2d35a_row10_col4" class="data row10 col4" >0.6667</td>
+      <td id="T_2d35a_row10_col5" class="data row10 col5" >0.6467</td>
+      <td id="T_2d35a_row10_col6" class="data row10 col6" >0.5900</td>
+      <td id="T_2d35a_row10_col7" class="data row10 col7" >0.6197</td>
+      <td id="T_2d35a_row10_col8" class="data row10 col8" >0.1900</td>
+    </tr>
+    <tr>
+      <th id="T_2d35a_level0_row11" class="row_heading level0 row11" >gbc</th>
+      <td id="T_2d35a_row11_col0" class="data row11 col0" >Gradient Boosting Classifier</td>
+      <td id="T_2d35a_row11_col1" class="data row11 col1" >0.8067</td>
+      <td id="T_2d35a_row11_col2" class="data row11 col2" >0.8500</td>
+      <td id="T_2d35a_row11_col3" class="data row11 col3" >0.6000</td>
+      <td id="T_2d35a_row11_col4" class="data row11 col4" >0.6500</td>
+      <td id="T_2d35a_row11_col5" class="data row11 col5" >0.6000</td>
+      <td id="T_2d35a_row11_col6" class="data row11 col6" >0.4867</td>
+      <td id="T_2d35a_row11_col7" class="data row11 col7" >0.4995</td>
+      <td id="T_2d35a_row11_col8" class="data row11 col8" >0.1360</td>
+    </tr>
+    <tr>
+      <th id="T_2d35a_level0_row12" class="row_heading level0 row12" >dt</th>
+      <td id="T_2d35a_row12_col0" class="data row12 col0" >Decision Tree Classifier</td>
+      <td id="T_2d35a_row12_col1" class="data row12 col1" >0.7767</td>
+      <td id="T_2d35a_row12_col2" class="data row12 col2" >0.7625</td>
+      <td id="T_2d35a_row12_col3" class="data row12 col3" >0.7000</td>
+      <td id="T_2d35a_row12_col4" class="data row12 col4" >0.5667</td>
+      <td id="T_2d35a_row12_col5" class="data row12 col5" >0.6133</td>
+      <td id="T_2d35a_row12_col6" class="data row12 col6" >0.4686</td>
+      <td id="T_2d35a_row12_col7" class="data row12 col7" >0.4799</td>
+      <td id="T_2d35a_row12_col8" class="data row12 col8" >0.0420</td>
+    </tr>
+    <tr>
+      <th id="T_2d35a_level0_row13" class="row_heading level0 row13" >qda</th>
+      <td id="T_2d35a_row13_col0" class="data row13 col0" >Quadratic Discriminant Analysis</td>
+      <td id="T_2d35a_row13_col1" class="data row13 col1" >0.7067</td>
+      <td id="T_2d35a_row13_col2" class="data row13 col2" >0.6000</td>
+      <td id="T_2d35a_row13_col3" class="data row13 col3" >0.0000</td>
+      <td id="T_2d35a_row13_col4" class="data row13 col4" >0.0000</td>
+      <td id="T_2d35a_row13_col5" class="data row13 col5" >0.0000</td>
+      <td id="T_2d35a_row13_col6" class="data row13 col6" >0.0000</td>
+      <td id="T_2d35a_row13_col7" class="data row13 col7" >0.0000</td>
+      <td id="T_2d35a_row13_col8" class="data row13 col8" >0.0760</td>
+    </tr>
+    <tr>
+      <th id="T_2d35a_level0_row14" class="row_heading level0 row14" >dummy</th>
+      <td id="T_2d35a_row14_col0" class="data row14 col0" >Dummy Classifier</td>
+      <td id="T_2d35a_row14_col1" class="data row14 col1" >0.7067</td>
+      <td id="T_2d35a_row14_col2" class="data row14 col2" >0.5000</td>
+      <td id="T_2d35a_row14_col3" class="data row14 col3" >0.0000</td>
+      <td id="T_2d35a_row14_col4" class="data row14 col4" >0.0000</td>
+      <td id="T_2d35a_row14_col5" class="data row14 col5" >0.0000</td>
+      <td id="T_2d35a_row14_col6" class="data row14 col6" >0.0000</td>
+      <td id="T_2d35a_row14_col7" class="data row14 col7" >0.0000</td>
+      <td id="T_2d35a_row14_col8" class="data row14 col8" >0.0390</td>
+    </tr>
+  </tbody>
+</table>
+</div><script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "7bd36f823ac64fd3aaefe2a99a3d9580"}</script><div class="output text_html"></div><div class="output text_html"><style>#sk-container-id-1 {color: black;background-color: white;}#sk-container-id-1 pre{padding: 0;}#sk-container-id-1 div.sk-toggleable {background-color: white;}#sk-container-id-1 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-1 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-1 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-1 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-1 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-1 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-1 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-1 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-1 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-1 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-1 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-1 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-1 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-1 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-1 div.sk-item {position: relative;z-index: 1;}#sk-container-id-1 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-1 div.sk-item::before, #sk-container-id-1 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-1 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-1 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-1 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-1 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-1 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-1 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-1 div.sk-label-container {text-align: center;}#sk-container-id-1 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-1 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-1" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion=&#x27;gini&#x27;, max_depth=None, max_features=&#x27;sqrt&#x27;,
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=1487, verbose=0, warm_start=False)</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-1" type="checkbox" checked><label for="sk-estimator-id-1" class="sk-toggleable__label sk-toggleable__label-arrow">ExtraTreesClassifier</label><div class="sk-toggleable__content"><pre>ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion=&#x27;gini&#x27;, max_depth=None, max_features=&#x27;sqrt&#x27;,
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=1487, verbose=0, warm_start=False)</pre></div></div></div></div></div></div></div>
+</div>
+<p>Dari hasil pycaret diatas didapatkan <strong>best_model</strong> yaitu pada metode <strong>Random Forest Classifier</strong>.</p>
+<section id="simpan-model-terbaik-dari-hasil-pycaret">
+<h2>Simpan Model Terbaik dari Hasil PyCaret<a class="headerlink" href="#simpan-model-terbaik-dari-hasil-pycaret" title="Permalink to this heading">#</a></h2>
+<p>Model terbaik yang didapat dari hasil compare_models pada Pycaret maka akan dilakukan simpan model yang nantinya digunakan untuk klasifikasi Jenis Kanker Payudara.</p>
+<p>Dengan menggunakan fungsi create_model, maka dapat membuat dan mengatur model machine learning. PyCaret akan secara otomatis mengatur parameter untuk meningkatkan performa model.</p>
+<p>Fungsi save_model digunakan untuk menyimpan model ke dalam suatu file.</p>
+<p>Fungsi load_model digunakan untuk memuat kembali model yang telah disimpan sebelumnya.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">best_model</span> <span class="o">=</span> <span class="n">create_model</span><span class="p">(</span><span class="s1">&#39;rf&#39;</span><span class="p">)</span>
+<span class="n">save_model</span><span class="p">(</span><span class="n">best_model</span><span class="p">,</span> <span class="s1">&#39;rf_bc&#39;</span><span class="p">)</span>
+<span class="n">loaded_model</span> <span class="o">=</span> <span class="n">load_model</span><span class="p">(</span><span class="s1">&#39;rf_bc&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"></div><div class="output text_html"><style type="text/css">
+#T_32f57_row10_col0, #T_32f57_row10_col1, #T_32f57_row10_col2, #T_32f57_row10_col3, #T_32f57_row10_col4, #T_32f57_row10_col5, #T_32f57_row10_col6 {
+  background: yellow;
+}
+</style>
+<table id="T_32f57" class="dataframe">
+  <thead>
+    <tr>
+      <th class="blank level0" >&nbsp;</th>
+      <th id="T_32f57_level0_col0" class="col_heading level0 col0" >Accuracy</th>
+      <th id="T_32f57_level0_col1" class="col_heading level0 col1" >AUC</th>
+      <th id="T_32f57_level0_col2" class="col_heading level0 col2" >Recall</th>
+      <th id="T_32f57_level0_col3" class="col_heading level0 col3" >Prec.</th>
+      <th id="T_32f57_level0_col4" class="col_heading level0 col4" >F1</th>
+      <th id="T_32f57_level0_col5" class="col_heading level0 col5" >Kappa</th>
+      <th id="T_32f57_level0_col6" class="col_heading level0 col6" >MCC</th>
+    </tr>
+    <tr>
+      <th class="index_name level0" >Fold</th>
+      <th class="blank col0" >&nbsp;</th>
+      <th class="blank col1" >&nbsp;</th>
+      <th class="blank col2" >&nbsp;</th>
+      <th class="blank col3" >&nbsp;</th>
+      <th class="blank col4" >&nbsp;</th>
+      <th class="blank col5" >&nbsp;</th>
+      <th class="blank col6" >&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="T_32f57_level0_row0" class="row_heading level0 row0" >0</th>
+      <td id="T_32f57_row0_col0" class="data row0 col0" >0.8333</td>
+      <td id="T_32f57_row0_col1" class="data row0 col1" >1.0000</td>
+      <td id="T_32f57_row0_col2" class="data row0 col2" >0.5000</td>
+      <td id="T_32f57_row0_col3" class="data row0 col3" >1.0000</td>
+      <td id="T_32f57_row0_col4" class="data row0 col4" >0.6667</td>
+      <td id="T_32f57_row0_col5" class="data row0 col5" >0.5714</td>
+      <td id="T_32f57_row0_col6" class="data row0 col6" >0.6325</td>
+    </tr>
+    <tr>
+      <th id="T_32f57_level0_row1" class="row_heading level0 row1" >1</th>
+      <td id="T_32f57_row1_col0" class="data row1 col0" >0.8333</td>
+      <td id="T_32f57_row1_col1" class="data row1 col1" >1.0000</td>
+      <td id="T_32f57_row1_col2" class="data row1 col2" >0.5000</td>
+      <td id="T_32f57_row1_col3" class="data row1 col3" >1.0000</td>
+      <td id="T_32f57_row1_col4" class="data row1 col4" >0.6667</td>
+      <td id="T_32f57_row1_col5" class="data row1 col5" >0.5714</td>
+      <td id="T_32f57_row1_col6" class="data row1 col6" >0.6325</td>
+    </tr>
+    <tr>
+      <th id="T_32f57_level0_row2" class="row_heading level0 row2" >2</th>
+      <td id="T_32f57_row2_col0" class="data row2 col0" >0.8333</td>
+      <td id="T_32f57_row2_col1" class="data row2 col1" >1.0000</td>
+      <td id="T_32f57_row2_col2" class="data row2 col2" >0.5000</td>
+      <td id="T_32f57_row2_col3" class="data row2 col3" >1.0000</td>
+      <td id="T_32f57_row2_col4" class="data row2 col4" >0.6667</td>
+      <td id="T_32f57_row2_col5" class="data row2 col5" >0.5714</td>
+      <td id="T_32f57_row2_col6" class="data row2 col6" >0.6325</td>
+    </tr>
+    <tr>
+      <th id="T_32f57_level0_row3" class="row_heading level0 row3" >3</th>
+      <td id="T_32f57_row3_col0" class="data row3 col0" >0.6667</td>
+      <td id="T_32f57_row3_col1" class="data row3 col1" >1.0000</td>
+      <td id="T_32f57_row3_col2" class="data row3 col2" >0.0000</td>
+      <td id="T_32f57_row3_col3" class="data row3 col3" >0.0000</td>
+      <td id="T_32f57_row3_col4" class="data row3 col4" >0.0000</td>
+      <td id="T_32f57_row3_col5" class="data row3 col5" >0.0000</td>
+      <td id="T_32f57_row3_col6" class="data row3 col6" >0.0000</td>
+    </tr>
+    <tr>
+      <th id="T_32f57_level0_row4" class="row_heading level0 row4" >4</th>
+      <td id="T_32f57_row4_col0" class="data row4 col0" >1.0000</td>
+      <td id="T_32f57_row4_col1" class="data row4 col1" >1.0000</td>
+      <td id="T_32f57_row4_col2" class="data row4 col2" >1.0000</td>
+      <td id="T_32f57_row4_col3" class="data row4 col3" >1.0000</td>
+      <td id="T_32f57_row4_col4" class="data row4 col4" >1.0000</td>
+      <td id="T_32f57_row4_col5" class="data row4 col5" >1.0000</td>
+      <td id="T_32f57_row4_col6" class="data row4 col6" >1.0000</td>
+    </tr>
+    <tr>
+      <th id="T_32f57_level0_row5" class="row_heading level0 row5" >5</th>
+      <td id="T_32f57_row5_col0" class="data row5 col0" >1.0000</td>
+      <td id="T_32f57_row5_col1" class="data row5 col1" >1.0000</td>
+      <td id="T_32f57_row5_col2" class="data row5 col2" >1.0000</td>
+      <td id="T_32f57_row5_col3" class="data row5 col3" >1.0000</td>
+      <td id="T_32f57_row5_col4" class="data row5 col4" >1.0000</td>
+      <td id="T_32f57_row5_col5" class="data row5 col5" >1.0000</td>
+      <td id="T_32f57_row5_col6" class="data row5 col6" >1.0000</td>
+    </tr>
+    <tr>
+      <th id="T_32f57_level0_row6" class="row_heading level0 row6" >6</th>
+      <td id="T_32f57_row6_col0" class="data row6 col0" >0.8333</td>
+      <td id="T_32f57_row6_col1" class="data row6 col1" >1.0000</td>
+      <td id="T_32f57_row6_col2" class="data row6 col2" >0.5000</td>
+      <td id="T_32f57_row6_col3" class="data row6 col3" >1.0000</td>
+      <td id="T_32f57_row6_col4" class="data row6 col4" >0.6667</td>
+      <td id="T_32f57_row6_col5" class="data row6 col5" >0.5714</td>
+      <td id="T_32f57_row6_col6" class="data row6 col6" >0.6325</td>
+    </tr>
+    <tr>
+      <th id="T_32f57_level0_row7" class="row_heading level0 row7" >7</th>
+      <td id="T_32f57_row7_col0" class="data row7 col0" >0.8000</td>
+      <td id="T_32f57_row7_col1" class="data row7 col1" >1.0000</td>
+      <td id="T_32f57_row7_col2" class="data row7 col2" >1.0000</td>
+      <td id="T_32f57_row7_col3" class="data row7 col3" >0.5000</td>
+      <td id="T_32f57_row7_col4" class="data row7 col4" >0.6667</td>
+      <td id="T_32f57_row7_col5" class="data row7 col5" >0.5455</td>
+      <td id="T_32f57_row7_col6" class="data row7 col6" >0.6124</td>
+    </tr>
+    <tr>
+      <th id="T_32f57_level0_row8" class="row_heading level0 row8" >8</th>
+      <td id="T_32f57_row8_col0" class="data row8 col0" >1.0000</td>
+      <td id="T_32f57_row8_col1" class="data row8 col1" >1.0000</td>
+      <td id="T_32f57_row8_col2" class="data row8 col2" >1.0000</td>
+      <td id="T_32f57_row8_col3" class="data row8 col3" >1.0000</td>
+      <td id="T_32f57_row8_col4" class="data row8 col4" >1.0000</td>
+      <td id="T_32f57_row8_col5" class="data row8 col5" >1.0000</td>
+      <td id="T_32f57_row8_col6" class="data row8 col6" >1.0000</td>
+    </tr>
+    <tr>
+      <th id="T_32f57_level0_row9" class="row_heading level0 row9" >9</th>
+      <td id="T_32f57_row9_col0" class="data row9 col0" >1.0000</td>
+      <td id="T_32f57_row9_col1" class="data row9 col1" >1.0000</td>
+      <td id="T_32f57_row9_col2" class="data row9 col2" >1.0000</td>
+      <td id="T_32f57_row9_col3" class="data row9 col3" >1.0000</td>
+      <td id="T_32f57_row9_col4" class="data row9 col4" >1.0000</td>
+      <td id="T_32f57_row9_col5" class="data row9 col5" >1.0000</td>
+      <td id="T_32f57_row9_col6" class="data row9 col6" >1.0000</td>
+    </tr>
+    <tr>
+      <th id="T_32f57_level0_row10" class="row_heading level0 row10" >Mean</th>
+      <td id="T_32f57_row10_col0" class="data row10 col0" >0.8800</td>
+      <td id="T_32f57_row10_col1" class="data row10 col1" >1.0000</td>
+      <td id="T_32f57_row10_col2" class="data row10 col2" >0.7000</td>
+      <td id="T_32f57_row10_col3" class="data row10 col3" >0.8500</td>
+      <td id="T_32f57_row10_col4" class="data row10 col4" >0.7333</td>
+      <td id="T_32f57_row10_col5" class="data row10 col5" >0.6831</td>
+      <td id="T_32f57_row10_col6" class="data row10 col6" >0.7142</td>
+    </tr>
+    <tr>
+      <th id="T_32f57_level0_row11" class="row_heading level0 row11" >Std</th>
+      <td id="T_32f57_row11_col0" class="data row11 col0" >0.1087</td>
+      <td id="T_32f57_row11_col1" class="data row11 col1" >0.0000</td>
+      <td id="T_32f57_row11_col2" class="data row11 col2" >0.3317</td>
+      <td id="T_32f57_row11_col3" class="data row11 col3" >0.3202</td>
+      <td id="T_32f57_row11_col4" class="data row11 col4" >0.2906</td>
+      <td id="T_32f57_row11_col5" class="data row11 col5" >0.3061</td>
+      <td id="T_32f57_row11_col6" class="data row11 col6" >0.2956</td>
+    </tr>
+  </tbody>
+</table>
+</div><script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "87965a32b35241d3b0d50a5fb1962f67"}</script><div class="output text_html"></div><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Transformation Pipeline and Model Successfully Saved
+Transformation Pipeline and Model Successfully Loaded
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="klasifikasi-menggunakan-random-forest-classifier">
+<h1>KLASIFIKASI MENGGUNAKAN RANDOM FOREST CLASSIFIER<a class="headerlink" href="#klasifikasi-menggunakan-random-forest-classifier" title="Permalink to this heading">#</a></h1>
+<p>Random Forest merupakan salah satu metode ensemble learning yang digunakan dalam machine learning untuk meningkatkan kinerja model. Ensemble learning menggabungkan beberapa model pembelajaran untuk menciptakan model yang lebih kuat dan lebih stabil. Random Forest khususnya digunakan untuk tugas klasifikasi dan regresi.</p>
+<p><strong>Bagaimana Random Forest Bekerja:</strong></p>
+<ol class="arabic simple">
+<li><p>Pemilihan Acak Sampel (Random Sampling):</p>
+<ul class="simple">
+<li><p>Dari dataset pelatihan, dibuat sejumlah dataset sampel yang sama dengan penggantian (bootstrap samples).</p></li>
+<li><p>Bootstrap samples adalah dataset acak yang dibuat dengan mengambil sampel secara acak dengan penggantian dari dataset pelatihan.</p></li>
+</ul>
+</li>
+<li><p>Pembangunan Pohon Keputusan (Decision Trees):</p>
+<ul class="simple">
+<li><p>Untuk setiap bootstrap sample, sebuah pohon keputusan (decision tree) dibangun.</p></li>
+<li><p>Pohon keputusan dibangun dengan membagi dataset pada setiap simpul berdasarkan fitur-fitur tertentu.</p></li>
+</ul>
+</li>
+<li><p>Voting (Voting Scheme):</p>
+<ul class="simple">
+<li><p>Setiap pohon memberikan prediksi untuk setiap instance yang masuk.</p></li>
+<li><p>Prediksi dari setiap pohon dijumlahkan dan mayoritas diambil sebagai prediksi akhir.</p></li>
+</ul>
+</li>
+</ol>
+<p><strong>Rumus Random Forest:</strong></p>
+<ol class="arabic simple">
+<li><p>Random Sampling:</p>
+<ul class="simple">
+<li><p>Untuk setiap pohon keputusan ( k ), dataset acak ( D_k ) dibuat dengan penggantian.</p></li>
+<li><p>Ukuran dataset acak sama dengan ukuran dataset pelatihan, tetapi beberapa instance dapat muncul beberapa kali dan yang lainnya mungkin tidak muncul sama sekali.</p></li>
+</ul>
+</li>
+<li><p>Pembangunan Pohon Keputusan:</p>
+<ul class="simple">
+<li><p>Pohon keputusan dibangun berdasarkan pemilihan fitur yang acak.</p></li>
+<li><p>Sebuah simpul membagi dataset berdasarkan fitur tertentu yang dipilih secara acak.</p></li>
+<li><p>Proses ini diulang hingga terbentuk pohon keputusan lengkap atau memenuhi kriteria berhenti tertentu.</p></li>
+</ul>
+</li>
+<li><p>Voting:</p>
+<ul class="simple">
+<li><p>Prediksi dari setiap pohon dijumlahkan dan mayoritas diambil sebagai prediksi akhir.</p></li>
+<li><p>Misalnya, jika kita memiliki ( N ) pohon dan ( n ) pohon memprediksi kelas A dan ( m ) pohon memprediksi kelas B, dengan ( n &gt; m ), maka prediksi akhir akan menjadi kelas A.</p></li>
+</ul>
+</li>
+</ol>
+<p><strong>Keuntungan Random Forest:</strong></p>
+<ul class="simple">
+<li><p>Mengatasi overfitting karena menggunakan beberapa pohon yang bekerja secara bersamaan.</p></li>
+<li><p>Robust terhadap outliers dan noise dalam data.</p></li>
+<li><p>Mampu menangani dataset besar dengan fitur yang banyak.</p></li>
+</ul>
+<p><strong>Rumus Tambahannya untuk Regresi:</strong>
+Jika Random Forest digunakan untuk tugas regresi, prediksi akhir dapat dihitung sebagai rata-rata prediksi dari semua pohon.</p>
+<p><span class="math notranslate nohighlight">\([ \text{Prediksi akhir} = \frac{1}{N} \sum_{i=1}^{N} \text{Prediksi pohon ke-i} ]\)</span></p>
+<p>Di mana ( N ) adalah jumlah pohon dalam Random Forest.</p>
+<p><strong>Code Random Forest Classifier</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">classification_report</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Inisialisasi model Random Forest Classifier</span>
+<span class="n">rf_model</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+<span class="c1"># Melatih model pada data latih</span>
+<span class="n">rf_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">pca_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>#sk-container-id-2 {color: black;background-color: white;}#sk-container-id-2 pre{padding: 0;}#sk-container-id-2 div.sk-toggleable {background-color: white;}#sk-container-id-2 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-2 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-2 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-2 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-2 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-2 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-2 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-2 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-2 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-2 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-2 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-2 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-2 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-2 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-2 div.sk-item {position: relative;z-index: 1;}#sk-container-id-2 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-2 div.sk-item::before, #sk-container-id-2 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-2 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-2 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-2 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-2 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-2 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-2 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-2 div.sk-label-container {text-align: center;}#sk-container-id-2 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-2 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-2" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion=&#x27;gini&#x27;, max_depth=None, max_features=&#x27;sqrt&#x27;,
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=None, oob_score=False,
+                       random_state=None, verbose=0, warm_start=False)</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-2" type="checkbox" checked><label for="sk-estimator-id-2" class="sk-toggleable__label sk-toggleable__label-arrow">RandomForestClassifier</label><div class="sk-toggleable__content"><pre>RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion=&#x27;gini&#x27;, max_depth=None, max_features=&#x27;sqrt&#x27;,
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=None, oob_score=False,
+                       random_state=None, verbose=0, warm_start=False)</pre></div></div></div></div></div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Membuat prediksi pada data uji</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">rf_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">pca_test</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Evaluasi performa model</span>
+<span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+<span class="c1"># Menampilkan hasil</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Akurasi:&quot;</span><span class="p">,</span><span class="n">accuracy</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Akurasi: 0.8666666666666667
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dump</span><span class="p">(</span><span class="n">rf_model</span><span class="p">,</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;pca_rf.pkl&#39;</span><span class="p">,</span><span class="s1">&#39;wb&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="link-streamlit">
+<h1>Link Streamlit :<a class="headerlink" href="#link-streamlit" title="Permalink to this heading">#</a></h1>
+<p><a class="reference external" href="https://cervical-cancer-behavior-risk.streamlit.app/">https://cervical-cancer-behavior-risk.streamlit.app/</a></p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="21-145_Sifa_Toronto-File.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>Toronto File</strong></p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">TUJUAN ANALISIS</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-understanding">DATA UNDERSTANDING</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deskripsi-data">Deskripsi Data</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#eksplorasi-data">EKSPLORASI DATA</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing">PREPROCESSING</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-menggunakan-min-max-scaler">1. Normalisasi Menggunakan Min-Max Scaler</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#melakukan-standarisasi-pada-data-train">2. Melakukan Standarisasi pada Data Train</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reduksi-dimensi-menggunakan-pca">3. Reduksi Dimensi menggunakan PCA</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mencari-metode-machine-learning-terbaik-menggunakan-pycaret">MENCARI METODE MACHINE LEARNING TERBAIK MENGGUNAKAN PYCARET</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simpan-model-terbaik-dari-hasil-pycaret">Simpan Model Terbaik dari Hasil PyCaret</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#klasifikasi-menggunakan-random-forest-classifier">KLASIFIKASI MENGGUNAKAN RANDOM FOREST CLASSIFIER</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#link-streamlit">Link Streamlit :</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Niswatul Sifa
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
